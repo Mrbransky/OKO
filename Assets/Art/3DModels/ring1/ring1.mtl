@@ -1,0 +1,31 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ring1_color01.tga
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.34 0.35 0.50
+Ka 0.00 0.00 0.00
+Tf 0.50 0.50 0.50
+Ni 1.00
+newmtl lambert7SG
+illum 4
+Kd 0.18 0.20 0.40
+Ka 0.00 0.00 0.00
+Tf 0.48 0.48 0.48
+Ni 1.00
+newmtl lambert8SG
+illum 4
+Kd 0.38 0.36 0.90
+Ka 0.00 0.00 0.00
+Tf 0.47 0.47 0.47
+Ni 1.00
