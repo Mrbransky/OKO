@@ -36,7 +36,7 @@ public class MeteorBehavior : MonoBehaviour {
 			Instantiate(meteorShards, meteorPosition, Quaternion.identity);
 			Instantiate(meteorShards, meteorPosition, Quaternion.identity);
 
-			if(randNum == 1)
+			if(randNum == 2000)
 			{
 			Instantiate(powerUp, meteorPosition, Quaternion.identity);
 			}
@@ -47,8 +47,12 @@ public class MeteorBehavior : MonoBehaviour {
 			Destroy(this.gameObject);
 
 		}
+
+	}
+	void OnTriggerEnter2D(Collider2D collision)
+	{
 		if (collision.gameObject.tag == "BlackHole") {
-				
+			
 			Destroy (gameObject);
 		}
 	}

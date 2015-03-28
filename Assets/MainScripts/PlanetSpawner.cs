@@ -13,11 +13,18 @@ public class PlanetSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Planets = new List<GameObject> ();
-		for (int i = 0; i < NumberOfPlanets; i++) {
+		if (NumberOfPlanets <= 1){
+			Vector2 position = new Vector2 (0,0);
+			GameObject spawnedPlanet = (GameObject)Instantiate (PlanetPrefab, position, Quaternion.identity);
+			spawnedPlanet.GetComponent<SpriteRenderer> ().sprite = PlanetSprites [Random.Range (0, PlanetSprites.Count)];
+		}
+		else{
+			for (int i = 0; i < NumberOfPlanets; i++) {
 						Vector2 position = new Vector2 (Random.Range (-100, 100), Random.Range (-100, 100));
 						GameObject spawnedPlanet = (GameObject)Instantiate (PlanetPrefab, position, Quaternion.identity);
 						spawnedPlanet.GetComponent<SpriteRenderer> ().sprite = PlanetSprites [Random.Range (0, PlanetSprites.Count)];
-				}
+			}
+		}
 	}
 	
 	// Update is called once per frame

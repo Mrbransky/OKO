@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using GamepadInput;
 
@@ -104,7 +104,7 @@ public class Control : MonoBehaviour {
 		}
 		else
 		{
-			GUI.Label (new Rect (Screen.width / 2 - 300, 50, 500, 200),"Player 1 Life: " + targets [1].GetComponent<PlayerScript> ().LifeTotal);
-			GUI.Label (new Rect (Screen.width / 2 + 300, 50, 500, 200),"Player 2 Life: " + targets [0].GetComponent<PlayerScript> ().LifeTotal);}
+			GUI.Label (new Rect (Screen.width / 2 - 300, 50, 500, 200),"Player 1 Life: " + targets [1].GetComponent<PlayerScript> ().DamageAmount);
+			GUI.Label (new Rect (Screen.width / 2 + 300, 50, 500, 200),"Player 2 Life: " + targets [0].GetComponent<PlayerScript> ().DamageAmount);}
 	}
 }

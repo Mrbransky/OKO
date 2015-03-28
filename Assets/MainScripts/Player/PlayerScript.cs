@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour {
 	public bool isDisabled = false;
 	public bool shieldOn = false;
 
-    public int LifeTotal;
+    public float DamageAmount;
 	public AudioClip impact;
 
 
@@ -45,6 +45,11 @@ public class PlayerScript : MonoBehaviour {
 	float buttonPressedLastTime = 0;
 	float buttonPressedDuration = 0;
 	float lastButtonPressedDuration = 100;
+	float durationBetweenPresses = 0;
+	bool flipping = false;
+	Vector3 velocityToFlip = Vector3.zero;
+	Vector3 CollisionForce =Vector3.zero;
+	List<GameObject> ignoreCollisionList = new List<GameObject>();
 	/*TO DO
 		-Better physic-based controls
 		-Implement any sounds
@@ -63,7 +68,7 @@ public class PlayerScript : MonoBehaviour {
 		}
 		Time.timeScale = 1.0f;
 		curPlayer = this.gameObject.name;
-        LifeTotal = 10;
+        DamageAmount = 1f;
 		control = GameObject.FindGameObjectWithTag ("Control");
 		if (GameObject.Find("Main Camera") != null)
 			myCamera = GameObject.Find("Main Camera");
@@ -74,7 +79,7 @@ public class PlayerScript : MonoBehaviour {
 
 	void Update () {
 
-		if (LifeTotal <= 0) {
+		if (DamageAmount <= 0) {
 				
 			isDisabled = true;
 		}
@@ -103,6 +108,14 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 
+		if (Mathf.Abs(CollisionForce.magnitude) > CollisionForce.normalized.magnitude)
+		{
+			CollisionForce -= CollisionForce.normalized/5;
+		}
+		else
+		{
+			CollisionForce = Vector3.zero;
+		}
 
 		if (control.GetComponent<Control> ().startGame == false) {
 			
@@ -113,7 +126,7 @@ public class PlayerScript : MonoBehaviour {
 		else{
 			if (!startboosted)
 			{
-				rigidbody2D.AddForce(transform.up * 1000);
+				rigidbody2D.AddForce(transform.up * 2000);
 				startboosted = true;
 			}
 			pullForce = -35;
@@ -141,14 +154,18 @@ public class PlayerScript : MonoBehaviour {
 		if (powerTimer <= 0) {powerTimer = 4;}
 
 
-	}
-	void FixedUpdate()
-	{
-		if(isDisabled == false && control.GetComponent<Control>().startGame)
+		if(control.GetComponent<Control>().startGame)
 		{
-			
+		
+			testCollision();
+
 			//rigidbody2D.velocity = new Vector2(Mathf.Lerp(0, Input.GetAxis("Horizontal")* curSpeed, 0.8f),
 			//                                 Mathf.Lerp(0, Input.GetAxis("Vertical")* curSpeed, 0.8f));
+
+			if (flipping)
+			{
+				flipVelocity();
+			}
 
 			//move in direction of current joystick
 			if(gameObject.name == "Player 1"){
@@ -171,8 +188,9 @@ public class PlayerScript : MonoBehaviour {
 
 				if(Input.GetKeyDown(KeyCode.Z))
 				{
+					durationBetweenPresses = Time.time - buttonPressedLastTime;
 					buttonPressedLastTime = Time.time;
-					buttonPressedDuration = 0;
+					buttonPressedDuration = Time.time - buttonPressedLastTime;
 				}
 				if(Input.GetKey(KeyCode.Z))
 				{
@@ -181,10 +199,12 @@ public class PlayerScript : MonoBehaviour {
 				}
 				if (Input.GetKeyUp(KeyCode.Z))
 				{
-					if (lastButtonPressedDuration <= .25f && buttonPressedDuration <= .25f)
+					if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
 					{
 						facingForward = !facingForward;
-						rigidbody2D.velocity = -rigidbody2D.velocity;
+						//rigidbody2D.velocity = -rigidbody2D.velocity;
+						flipping = true;
+						velocityToFlip = rigidbody2D.velocity;
 						lastButtonPressedDuration = 100;
 						buttonPressedDuration = 0;
 					}
@@ -214,6 +234,7 @@ public class PlayerScript : MonoBehaviour {
 
 				if(Input.GetKeyDown(KeyCode.M))
 				{
+					durationBetweenPresses = Time.time - buttonPressedLastTime;
 					buttonPressedLastTime = Time.time;
 					buttonPressedDuration = 0;
 				}
@@ -224,10 +245,13 @@ public class PlayerScript : MonoBehaviour {
 				}
 				if (Input.GetKeyUp(KeyCode.M))
 				{
-					if (lastButtonPressedDuration <= .25f && buttonPressedDuration <= .25f)
+					if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
 					{
 						facingForward = !facingForward;
-						rigidbody2D.velocity = -rigidbody2D.velocity;
+						flipping = true;
+						velocityToFlip = rigidbody2D.velocity;
+
+						//rigidbody2D.velocity = -rigidbody2D.velocity;
 						lastButtonPressedDuration = 100;
 						buttonPressedDuration = 0;
 					}
@@ -253,27 +277,27 @@ public class PlayerScript : MonoBehaviour {
 		}
 
 		if (rigidbody2D.velocity != Vector2.zero) {
-			Vector3 dir = (Vector3)rigidbody2D.velocity - (Vector3)transform.position;
+			Vector3 dir = ((Vector3)rigidbody2D.velocity-CollisionForce) - (Vector3)transform.position;
 			//float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-			float angle = Vector3.Angle(rigidbody2D.velocity.normalized,Vector3.up);
+			float angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
 			if (rigidbody2D.velocity.normalized.x > 0)
 			{
 				angle = -angle;
 			}
-			if (facingForward)
-			{
+//			if (facingForward)
+//			{
 			Quaternion rot = transform.rotation;
 			transform.rotation = Quaternion.AngleAxis(angle , Vector3.forward);
 			
 			//rot = Quaternion.LookRotation(rigidbody2D.velocity, Vector3.up);
 			//print (rot.eulerAngles);
 			transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
-			}
-			else{
-				Quaternion rot = transform.rotation;
-				transform.rotation = Quaternion.AngleAxis(-angle , Vector3.forward);
-				transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
-			}
+//			}
+//			else{
+//				Quaternion rot = transform.rotation;
+//				transform.rotation = Quaternion.AngleAxis(-angle , Vector3.forward);
+//				transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
+//			}
 		}
 
 		//rigidbody2D.velocity = movement;
@@ -285,7 +309,11 @@ public class PlayerScript : MonoBehaviour {
 //				float sideC = Mathf.Sqrt(Mathf.Pow(sideA,2) + Mathf.Pow(sideB,2));
 //				float semiPerimeter = .5f*(sideA + sideB + sideC);
 				Vector3 dir = (bHole.transform.position-transform.position).normalized;
-
+				float dist = (bHole.transform.position-transform.position).magnitude;
+				if (dist == 0)
+				{
+					dist = .000001f;
+				}
 				Vector3 movement = Vector3.zero;
 				float currentAngle = Vector3.Angle(dir, bHole.transform.position + Vector3.up);
 				if (transform.position.x > bHole.transform.position.x)
@@ -297,7 +325,7 @@ public class PlayerScript : MonoBehaviour {
 				movement.y = dir.y + Mathf.Sin(currentAngle * Mathf.Deg2Rad)*2;	
 
 					//test on y
-				if (rigidbody2D.velocity.y > 1f || rigidbody2D.velocity.y < -1f )
+				if (rigidbody2D.velocity.y > .75f || rigidbody2D.velocity.y < -.75f )
 				{
 					movement.x = dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
 					movement.y = dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
@@ -309,7 +337,7 @@ public class PlayerScript : MonoBehaviour {
 				}
 
 					//test on x
-				if (rigidbody2D.velocity.x > 1f || rigidbody2D.velocity.x < -1f)
+				if (rigidbody2D.velocity.x > .75f || rigidbody2D.velocity.x < -.75f)
 				{
 					movement.x += dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
 					movement.y += dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
@@ -323,7 +351,7 @@ public class PlayerScript : MonoBehaviour {
 				movement.x = movement.x/2;
 				movement.y = movement.y/2;
 
-				movement = (movement) + (transform.up/1.5f) + (dir * 4);
+				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f);
 
 //				//dir = (Quaternion.AngleAxis(90, Vector3.up) * dir)*2;
 //				//bHole.transform.position + 
@@ -342,7 +370,55 @@ public class PlayerScript : MonoBehaviour {
 		}
 
 	}
+	void testCollision()
+	{
+//		Debug.DrawLine(new Vector2 (transform.position.x - 2f, transform.position.y+2f), 
+//		               new Vector2 (transform.position.x + 2f, transform.position.y+3.5f));
+//		foreach (Collider2D otherobj in Physics2D.OverlapAreaAll(new Vector2 (transform.position.x - 2f, transform.position.y-.375f), 
+//		                                                         new Vector2 (transform.position.x + 2f, transform.position.y+.375f)))
+//		{
+//			bool ignoreMe = false;
+//			List<GameObject> addToIgnore = new List<GameObject>();
+//			foreach (GameObject ignoreObj in ignoreCollisionList)
+//			{
+//				if (otherobj.gameObject == ignoreObj)
+//				{
+//					ignoreMe = true;
+//					break;
+//				}
+//			}
+//			if (otherobj.tag == "Player" && otherobj.gameObject != gameObject && !ignoreMe)
+//			{
+//				CollisionForce = (otherobj.gameObject.rigidbody2D.velocity)/(2f/DamageAmount) /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+//				rigidbody2D.velocity += (Vector2)CollisionForce;
+//				
+//				DamageAmount=DamageAmount*1.05f;
+//				addToIgnore.Add(otherobj.gameObject);
+//			}
+//			else
+//			{
+//				addToIgnore.Add(otherobj.gameObject);
+//			}
+//			ignoreCollisionList.Clear();
+//			foreach(GameObject addIgnore in addToIgnore)
+//			{
+//				ignoreCollisionList.Add(addIgnore);
+//			}
+//		}
+	}
+	void flipVelocity()
+	{
+		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) - velocityToFlip.normalized * 10;
+		if (((Vector3)rigidbody2D.velocity).magnitude < velocityToFlip.magnitude)
+		{
 
+		}
+		else
+		{
+			rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) + CollisionForce*2 + velocityToFlip.normalized * 10;
+			flipping = false;
+		}
+	}
 
 	void OnGUI()
 	{
@@ -400,15 +476,36 @@ public class PlayerScript : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "BlackHole")
 		{
-			if (LifeTotal > 0)
+			if (DamageAmount > 0)
 			{
-				LifeTotal--;
+				DamageAmount--;
 			}
-			else if (LifeTotal <= 0)
+			else if (DamageAmount <= 0)
 			{
 				Destroy (gameObject);
 			}
 			
+		}
+	}
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if(col.gameObject.tag == "FrontOfShip")
+		{
+			if (col.gameObject.transform.parent != gameObject)
+			{
+				
+				CollisionForce = (col.gameObject.transform.parent.rigidbody2D.velocity)/(2f/DamageAmount) /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+
+				foreach (ContactPoint2D contact in col.contacts) {
+					//				Vector3 pos = contact.point;
+					//				Instantiate(bHoleDamage,pos, Quaternion.identity);
+					rigidbody2D.AddForceAtPosition((Vector2)CollisionForce*25,contact.point);
+				}
+
+
+				
+				DamageAmount=DamageAmount*1.05f;                  
+			}
 		}
 	}
 	void OnTriggerEnter2D(Collider2D col)
@@ -419,14 +516,23 @@ public class PlayerScript : MonoBehaviour {
 //				Vector3 pos = contact.point;
 //				Instantiate(bHoleDamage,pos, Quaternion.identity);
 //			}
-            if (LifeTotal <= 0)
-            {
-                Destroy(gameObject);
-                Debug.Log("End Game");
-            }
+         	Destroy(gameObject);
+         	Debug.Log("End Game");
+    
 
 			
 		}
+//		if(col.gameObject.tag == "FrontOfShip")
+//		{
+//			if (col.gameObject.transform.parent != gameObject)
+//			{
+//
+//				CollisionForce = (col.gameObject.transform.parent.rigidbody2D.velocity)/(2f/DamageAmount) /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+//				rigidbody2D.velocity += (Vector2)CollisionForce;
+//				
+//				DamageAmount=DamageAmount*1.05f;                  
+//			}
+//		}
 		if(col.gameObject.tag == "Player")
 		{
 			//Debug.Log(col.transform.position.normalized);
@@ -440,10 +546,10 @@ public class PlayerScript : MonoBehaviour {
 //				Instantiate(explosionPrefab,pos, Quaternion.identity);
 //			}
 
-			if (LifeTotal <= 0){
+			if (DamageAmount <= 0){
 				isDisabled = true;
 			}
-			else{LifeTotal--;}
+			//else{LifeTotal--;}
 
 //			if(this.rigidbody2D.velocity.x > enemyPlayer.rigidbody2D.velocity.x)
 //			{
@@ -466,10 +572,10 @@ public class PlayerScript : MonoBehaviour {
 		{
 			Destroy (col.gameObject);
 
-            if (LifeTotal <= 0){
+            if (DamageAmount <= 0){
 				isDisabled = true;}
             else{
-				LifeTotal--;}
+				DamageAmount--;}
 			//Explosion animation
 		}
 		else if (curPlayer == "Player 2" && col.gameObject.name == "Player1Mine(Clone)")
@@ -479,10 +585,10 @@ public class PlayerScript : MonoBehaviour {
 //				Vector3 pos = contact.point;
 //				Instantiate(explosionPrefab,pos, Quaternion.identity);
 //			}
-            if (LifeTotal <= 0)
+            if (DamageAmount <= 0)
                 isDisabled = true;
             else
-                LifeTotal--;
+                DamageAmount--;
 		}
 	}
 //	void OnTriggerEnter2D(Collider2D collider)
