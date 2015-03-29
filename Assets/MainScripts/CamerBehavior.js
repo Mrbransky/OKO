@@ -65,31 +65,31 @@ function LateUpdate ()
 
  if(targets.Length > 1 )
  {
-		if(isOrthographic){
- 			
-			theCamera.transform.position.x = avgDistance.x ;
- 
-			theCamera.orthographicSize = largestDifference;
-			if(theCamera.orthographicSize >=90.5f)
-			{theCamera.orthographicSize =90.5f;}
-			if(theCamera.orthographicSize <=50.0f)
-			{theCamera.orthographicSize = 50.0f;}
- 
-			theCamera.transform.position.y = avgDistance.y;
- 			
-			theCamera.transform.LookAt(avgDistance);
- 
-		} else {
- 
-			theCamera.transform.position.x = avgDistance.x ;
- 
-			theCamera.transform.position.z = avgDistance.z - distance + largestDifference;
- 
-			theCamera.transform.position.y = height;
- 
-			theCamera.transform.LookAt(avgDistance);
- 
-		}
+//		if(isOrthographic){
+// 			
+//			theCamera.transform.position.x = avgDistance.x ;
+// 
+//			theCamera.orthographicSize = largestDifference;
+//			if(theCamera.orthographicSize >=90.5f)
+//			{theCamera.orthographicSize =90.5f;}
+//			if(theCamera.orthographicSize <=50.0f)
+//			{theCamera.orthographicSize = 50.0f;}
+// 
+//			theCamera.transform.position.y = avgDistance.y;
+// 			
+//			theCamera.transform.LookAt(avgDistance);
+// 
+//		} else {
+// 
+//			theCamera.transform.position.x = avgDistance.x ;
+// 
+//			theCamera.transform.position.z = avgDistance.z - distance + largestDifference;
+// 
+//			theCamera.transform.position.y = height;
+// 
+//			theCamera.transform.LookAt(avgDistance);
+// 
+//		}
 		var shakeScript = gameObject.GetComponent("CameraShakeScript");
  		shakeScript.Shake();
 		

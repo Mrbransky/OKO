@@ -4,7 +4,7 @@ using GamepadInput;
 
 public class Control : MonoBehaviour {
 	
-	
+	public int NumberOfPlayers;
 	public GameObject[] targets;
 	public GameObject fader;
 	public bool gameEnd = false;

@@ -48,7 +48,7 @@ public class PlayerScript : MonoBehaviour {
 	float durationBetweenPresses = 0;
 	bool flipping = false;
 	Vector3 velocityToFlip = Vector3.zero;
-	Vector3 CollisionForce =Vector3.zero;
+	public Vector3 CollisionForce =Vector3.zero;
 	List<GameObject> ignoreCollisionList = new List<GameObject>();
 	/*TO DO
 		-Better physic-based controls
@@ -351,12 +351,12 @@ public class PlayerScript : MonoBehaviour {
 				movement.x = movement.x/2;
 				movement.y = movement.y/2;
 
-				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f);
+				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f * DamageAmount);
 
 //				//dir = (Quaternion.AngleAxis(90, Vector3.up) * dir)*2;
 //				//bHole.transform.position + 
 //				//orbit controls
-				Debug.Log(gameObject.name + " " + dir);
+				//Debug.Log(gameObject.name + " " + dir);
 				Debug.DrawLine(transform.position,(transform.position + movement));
 				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity));
 				rigidbody2D.AddForce(-(movement.normalized) * pullForce * rigidbody2D.mass);
@@ -487,27 +487,27 @@ public class PlayerScript : MonoBehaviour {
 			
 		}
 	}
-	void OnCollisionEnter2D(Collision2D col)
-	{
-		if(col.gameObject.tag == "FrontOfShip")
-		{
-			if (col.gameObject.transform.parent != gameObject)
-			{
-				
-				CollisionForce = (col.gameObject.transform.parent.rigidbody2D.velocity)/(2f/DamageAmount) /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
-
-				foreach (ContactPoint2D contact in col.contacts) {
-					//				Vector3 pos = contact.point;
-					//				Instantiate(bHoleDamage,pos, Quaternion.identity);
-					rigidbody2D.AddForceAtPosition((Vector2)CollisionForce*25,contact.point);
-				}
-
-
-				
-				DamageAmount=DamageAmount*1.05f;                  
-			}
-		}
-	}
+//	void OnCollisionEnter2D(Collision2D col)
+//	{
+//		if(col.gameObject.tag == "FrontOfShip")
+//		{
+//			if (col.gameObject.GetComponent<PlayerFrontScript>().Parent != gameObject)
+//			{
+//				
+//				CollisionForce = (col.gameObject.transform.parent.rigidbody2D.velocity)/(2f/DamageAmount) /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+//				
+//				foreach (ContactPoint2D contact in col.contacts) {
+//					//				Vector3 pos = contact.point;
+//					//				Instantiate(bHoleDamage,pos, Quaternion.identity);
+//					rigidbody2D.AddForceAtPosition((Vector2)CollisionForce*25,contact.point);
+//				}
+//				
+//				
+//				print ("HIT");
+//				DamageAmount=DamageAmount*1.05f;                  
+//			}
+//		}
+//	}
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.gameObject.tag == "BlackHole")
