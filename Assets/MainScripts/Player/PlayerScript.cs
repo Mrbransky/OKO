@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour {
     public float DamageAmount;
 	public AudioClip impact;
 
-
+	public KeyCode MyKey;
 	//public float speed = 2;
 	//public Vector2 speed = new Vector2(15,15);
 	float curSpeed = 25;

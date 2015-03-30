@@ -3,9 +3,11 @@ using System.Collections;
 using GamepadInput;
 
 public class Control : MonoBehaviour {
-	
-	public int NumberOfPlayers;
+
+	GameObject GlobalControl;
+	public GameObject PlayerPrefab;
 	public GameObject[] targets;
+	public GameObject[] suns;
 	public GameObject fader;
 	public bool gameEnd = false;
 	public GUISkin mainSkin;
@@ -19,7 +21,25 @@ public class Control : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+
+		if (GameObject.Find("GlobalControl") != null)
+		{
+			GlobalControl = GameObject.Find("GlobalControl");
+		}
+		else{
+			GameObject globalcontrol = new GameObject();
+			globalcontrol.AddComponent("GlobalControlScript");
+			GlobalControl = globalcontrol;
+		}
+
+		Vector3 spawnPos = Vector3.zero;
+		Vector3 spawnRot = transform.rotation.eulerAngles;
+		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
+		{
+			GameObject tempPlayer = (GameObject)Instantiate(PlayerPrefab,spawnPos,Quaternion.Euler( spawnRot));
+			tempPlayer.GetComponent<PlayerScript>().MyKey = key;
+		}
+
 		targets = GameObject.FindGameObjectsWithTag ("Player");
 		fader.GetComponent<Fade>().sceneStarting = true;
 		
@@ -104,7 +124,8 @@ public class Control : MonoBehaviour {
 		}
 		else
 		{
-			GUI.Label (new Rect (Screen.width / 2 - 300, 50, 500, 200),"Player 1 Life: " + targets [1].GetComponent<PlayerScript> ().DamageAmount);
-			GUI.Label (new Rect (Screen.width / 2 + 300, 50, 500, 200),"Player 2 Life: " + targets [0].GetComponent<PlayerScript> ().DamageAmount);}
+			//GUI.Label (new Rect (Screen.width / 2 - 300, 50, 500, 200),"Player 1 Life: " + targets [1].GetComponent<PlayerScript> ().DamageAmount);
+			//GUI.Label (new Rect (Screen.width / 2 + 300, 50, 500, 200),"Player 2 Life: " + targets [0].GetComponent<PlayerScript> ().DamageAmount);
+		}
 	}
 }
