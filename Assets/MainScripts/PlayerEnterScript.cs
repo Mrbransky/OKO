@@ -14,6 +14,7 @@ public class PlayerEnterScript : MonoBehaviour {
 		else{
 			GameObject globalcontrol = new GameObject();
 			globalcontrol.AddComponent("GlobalControlScript");
+			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}
 	}
@@ -77,6 +78,13 @@ public class PlayerEnterScript : MonoBehaviour {
 				y+=50;
 			}
 			i++;
+		}
+		if(keysUsed.Count >= 2)
+		{
+			if(GUI.Button(new Rect(Screen.width - 110, Screen.height - 60, 100,50),"Play Game"))
+			{
+				Application.LoadLevel("BattleScene");
+			}
 		}
 	}
 }

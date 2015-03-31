@@ -29,15 +29,19 @@ public class Control : MonoBehaviour {
 		else{
 			GameObject globalcontrol = new GameObject();
 			globalcontrol.AddComponent("GlobalControlScript");
+			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}
 
 		Vector3 spawnPos = Vector3.zero;
 		Vector3 spawnRot = transform.rotation.eulerAngles;
+		int i = 1;
 		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
 		{
 			GameObject tempPlayer = (GameObject)Instantiate(PlayerPrefab,spawnPos,Quaternion.Euler( spawnRot));
 			tempPlayer.GetComponent<PlayerScript>().MyKey = key;
+			tempPlayer.name = "Player " + i;
+			i++;
 		}
 
 		targets = GameObject.FindGameObjectsWithTag ("Player");

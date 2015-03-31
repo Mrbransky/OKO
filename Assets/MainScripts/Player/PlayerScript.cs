@@ -88,16 +88,16 @@ public class PlayerScript : MonoBehaviour {
 		//			|
 		//			|
 		//			V
-		switch (gameObject.name) {
-		case "Player 1":
-			Controls (GamePad.Index.One);
-			break;
-		case "Player 2":
-			Controls (GamePad.Index.Two);	
-			break;
-		default:
-			break;
-		}
+//		switch (gameObject.name) {
+//		case "Player 1":
+//			Controls (GamePad.Index.One);
+//			break;
+//		case "Player 2":
+//			Controls (GamePad.Index.Two);	
+//			break;
+//		default:
+//			break;
+//		}
 
 		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,50))
 		{
@@ -168,7 +168,6 @@ public class PlayerScript : MonoBehaviour {
 			}
 
 			//move in direction of current joystick
-			if(gameObject.name == "Player 1"){
 //			if(Input.GetKey(KeyCode.W))
 //			{
 //				rigidbody2D.AddForce(Vector2.up*curSpeed);
@@ -186,79 +185,31 @@ public class PlayerScript : MonoBehaviour {
 //					rigidbody2D.AddForce(-Vector2.up*curSpeed);
 //			}
 
-				if(Input.GetKeyDown(KeyCode.Z))
-				{
-					durationBetweenPresses = Time.time - buttonPressedLastTime;
-					buttonPressedLastTime = Time.time;
-					buttonPressedDuration = Time.time - buttonPressedLastTime;
-				}
-				if(Input.GetKey(KeyCode.Z))
-				{
-					buttonPressedDuration = Time.time - buttonPressedLastTime;
-					rigidbody2D.AddForce(transform.up*curSpeed);
-				}
-				if (Input.GetKeyUp(KeyCode.Z))
-				{
-					if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
-					{
-						facingForward = !facingForward;
-						//rigidbody2D.velocity = -rigidbody2D.velocity;
-						flipping = true;
-						velocityToFlip = rigidbody2D.velocity;
-						lastButtonPressedDuration = 100;
-						buttonPressedDuration = 0;
-					}
-					else{
-						lastButtonPressedDuration = buttonPressedDuration;
-						buttonPressedDuration = 0;
-					}
-				}
+			if(Input.GetKeyDown(MyKey))
+			{
+				durationBetweenPresses = Time.time - buttonPressedLastTime;
+				buttonPressedLastTime = Time.time;
+				buttonPressedDuration = Time.time - buttonPressedLastTime;
 			}
-			if(gameObject.name == "Player 2"){
-//				if(Input.GetKey(KeyCode.UpArrow))
-//				{
-//					rigidbody2D.AddForce(Vector2.up*curSpeed);
-//				}
-//				if(Input.GetKey(KeyCode.LeftArrow))
-//				{
-//					rigidbody2D.AddForce(-Vector2.right*curSpeed);
-//				}
-//				if(Input.GetKey(KeyCode.RightArrow))
-//				{
-//					rigidbody2D.AddForce(Vector2.right*curSpeed);
-//				}
-//				if(Input.GetKey(KeyCode.DownArrow))
-//				{
-//					rigidbody2D.AddForce(-Vector2.up*curSpeed);
-//				}
-
-				if(Input.GetKeyDown(KeyCode.M))
+			if(Input.GetKey(MyKey))
+			{
+				buttonPressedDuration = Time.time - buttonPressedLastTime;
+				rigidbody2D.AddForce(transform.up*curSpeed);
+			}
+			if (Input.GetKeyUp(MyKey))
+			{
+				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
 				{
-					durationBetweenPresses = Time.time - buttonPressedLastTime;
-					buttonPressedLastTime = Time.time;
+					facingForward = !facingForward;
+					//rigidbody2D.velocity = -rigidbody2D.velocity;
+					flipping = true;
+					velocityToFlip = rigidbody2D.velocity;
+					lastButtonPressedDuration = 100;
 					buttonPressedDuration = 0;
 				}
-				if(Input.GetKey(KeyCode.M))
-				{
-					buttonPressedDuration = Time.time - buttonPressedLastTime;
-					rigidbody2D.AddForce(transform.up*curSpeed);
-				}
-				if (Input.GetKeyUp(KeyCode.M))
-				{
-					if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
-					{
-						facingForward = !facingForward;
-						flipping = true;
-						velocityToFlip = rigidbody2D.velocity;
-
-						//rigidbody2D.velocity = -rigidbody2D.velocity;
-						lastButtonPressedDuration = 100;
-						buttonPressedDuration = 0;
-					}
-					else{
-						lastButtonPressedDuration = buttonPressedDuration;
-						buttonPressedDuration = 0;
-					}
+				else{
+					lastButtonPressedDuration = buttonPressedDuration;
+					buttonPressedDuration = 0;
 				}
 			}
 		}
@@ -431,8 +382,8 @@ public class PlayerScript : MonoBehaviour {
 		// Center the label over the coordinates
 		boxPosition.x -= 50 * 0.5f;
 		boxPosition.y -= 100 * 0.5f;
-
-		GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), name);
+		if (!startboosted)
+			GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), name);
 	}
 
 //-----------------------------------
