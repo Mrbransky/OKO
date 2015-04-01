@@ -99,7 +99,7 @@ public class PlayerScript : MonoBehaviour {
 //			break;
 //		}
 
-		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,50))
+		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,20))
 		{
 			if ((otherObj.tag == "Player" && otherObj.gameObject != gameObject) || otherObj.tag == "Meteor")
 			{
@@ -110,7 +110,7 @@ public class PlayerScript : MonoBehaviour {
 
 		if (Mathf.Abs(CollisionForce.magnitude) > CollisionForce.normalized.magnitude)
 		{
-			CollisionForce -= CollisionForce.normalized/5;
+			CollisionForce -= CollisionForce.normalized/10;
 		}
 		else
 		{
@@ -359,14 +359,14 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void flipVelocity()
 	{
-		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) - velocityToFlip.normalized * 10;
-		if (((Vector3)rigidbody2D.velocity).magnitude < velocityToFlip.magnitude)
+		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity-CollisionForce) - velocityToFlip.normalized * 10;
+		if (((Vector3)rigidbody2D.velocity-CollisionForce).magnitude < velocityToFlip.magnitude)
 		{
 
 		}
 		else
 		{
-			rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) + CollisionForce*2 + velocityToFlip.normalized * 10;
+			rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity+CollisionForce) + velocityToFlip.normalized * 10;
 			flipping = false;
 		}
 	}
@@ -425,18 +425,18 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void OnCollisionStay2D(Collision2D col)
 	{
-		if(col.gameObject.tag == "BlackHole")
-		{
-			if (DamageAmount > 0)
-			{
-				DamageAmount--;
-			}
-			else if (DamageAmount <= 0)
-			{
-				Destroy (gameObject);
-			}
-			
-		}
+//		if(col.gameObject.tag == "BlackHole")
+//		{
+//			if (DamageAmount > 0)
+//			{
+//				DamageAmount--;
+//			}
+//			else if (DamageAmount <= 0)
+//			{
+//				Destroy (gameObject);
+//			}
+//			
+//		}
 	}
 //	void OnCollisionEnter2D(Collision2D col)
 //	{
@@ -491,57 +491,56 @@ public class PlayerScript : MonoBehaviour {
 			//col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.position.normalized * Mathf.Pow(2,10/(col.gameObject.GetComponent<PlayerScript>().LifeTotal + 1))* rigidbody2D.mass);
 
 			audio.PlayOneShot(impact);
-			myCamera.GetComponent<CameraShakeScript>().Shake(.5f);
+//			myCamera.GetComponent<CameraShakeScript>().Shake(.5f);
 //			foreach (ContactPoint2D contact in col.contacts) {
 //				Vector3 pos = contact.point;
 //				Instantiate(explosionPrefab,pos, Quaternion.identity);
 //			}
-
-			if (DamageAmount <= 0){
-				isDisabled = true;
-			}
-			//else{LifeTotal--;}
-
-//			if(this.rigidbody2D.velocity.x > enemyPlayer.rigidbody2D.velocity.x)
-//			{
-//                if (LifeTotal <= 0){
-//					isDisabled = true;
-//					}
-//                else{
-//					LifeTotal--;}
+//
+//			if (DamageAmount <= 0){
+//				isDisabled = true;
 //			}
-//			if(this.rigidbody2D.velocity.y > enemyPlayer.rigidbody2D.velocity.y)
-//			{
-//                if (LifeTotal <= 0){
-//					isDisabled = true;
-//					}
-//                else{
-//					LifeTotal--;}
-//			}
-		}
-		if(curPlayer == "Player 1" && col.gameObject.name == "Player2Mine(Clone)")
-		{
-			Destroy (col.gameObject);
-
-            if (DamageAmount <= 0){
-				isDisabled = true;}
-            else{
-				DamageAmount--;}
-			//Explosion animation
-		}
-		else if (curPlayer == "Player 2" && col.gameObject.name == "Player1Mine(Clone)")
-		{
-			Destroy (col.gameObject);
-//			foreach (ContactPoint2D contact in col.contacts) {
-//				Vector3 pos = contact.point;
-//				Instantiate(explosionPrefab,pos, Quaternion.identity);
-//			}
-            if (DamageAmount <= 0)
-                isDisabled = true;
-            else
-                DamageAmount--;
-		}
-	}
+//			//else{LifeTotal--;}
+//
+////			if(this.rigidbody2D.velocity.x > enemyPlayer.rigidbody2D.velocity.x)
+////			{
+////                if (LifeTotal <= 0){
+////					isDisabled = true;
+////					}
+////                else{
+////					LifeTotal--;}
+////			}
+////			if(this.rigidbody2D.velocity.y > enemyPlayer.rigidbody2D.velocity.y)
+////			{
+////                if (LifeTotal <= 0){
+////					isDisabled = true;
+////					}
+////                else{
+////					LifeTotal--;}
+////			}
+//		}
+//		if(curPlayer == "Player 1" && col.gameObject.name == "Player2Mine(Clone)")
+//		{
+//			Destroy (col.gameObject);
+//
+//            if (DamageAmount <= 0){
+//				isDisabled = true;}
+//            else{
+//				DamageAmount--;}
+//			//Explosion animation
+//		}
+//		else if (curPlayer == "Player 2" && col.gameObject.name == "Player1Mine(Clone)")
+//		{
+//			Destroy (col.gameObject);
+////			foreach (ContactPoint2D contact in col.contacts) {
+////				Vector3 pos = contact.point;
+////				Instantiate(explosionPrefab,pos, Quaternion.identity);
+////			}
+//            if (DamageAmount <= 0)
+//                isDisabled = true;
+//            else
+//                DamageAmount--;
+//		}
 //	void OnTriggerEnter2D(Collider2D collider)
 //	{
 //
@@ -572,6 +571,8 @@ public class PlayerScript : MonoBehaviour {
 //		}
 //
 //	}
+		}
+	}
 	void OnTriggerExit2D(Collider2D col)
 	{
 		if (col.tag == "Bounds")

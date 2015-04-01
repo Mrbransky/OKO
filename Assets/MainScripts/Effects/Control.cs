@@ -5,6 +5,7 @@ using GamepadInput;
 public class Control : MonoBehaviour {
 
 	GameObject GlobalControl;
+	public GameObject OoB;
 	public GameObject PlayerPrefab;
 	public GameObject[] targets;
 	public GameObject[] suns;
@@ -32,19 +33,88 @@ public class Control : MonoBehaviour {
 			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}
+		//PlayerSpawning
+		GetComponent<PlanetSpawner>().SpawnPlanets();
+	
+		GameObject[] suns = GameObject.FindGameObjectsWithTag("BlackHole");
+		int PlayersPerSun = (int)Mathf.Floor(GlobalControlScript.GlobalControl.NumberOfPlayers/suns.Length);
+
+		float DistAwayFromSun = 40; 
+		float angle = Mathf.PI * 2 / PlayersPerSun; 
 
 		Vector3 spawnPos = Vector3.zero;
-		Vector3 spawnRot = transform.rotation.eulerAngles;
+		Quaternion spawnRot = transform.rotation;
+		int sunToSpawnTo = 0;
 		int i = 1;
+		int playerAroundSun = 1;
 		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
 		{
-			GameObject tempPlayer = (GameObject)Instantiate(PlayerPrefab,spawnPos,Quaternion.Euler( spawnRot));
+
+
+			angle += Mathf.PI * 2 / PlayersPerSun; 
+			spawnPos = suns[sunToSpawnTo].transform.position + new Vector3 (Mathf.Cos(angle), Mathf.Sin(angle)) * DistAwayFromSun;
+
+//			float angleToSun = Vector3.Angle((suns[sunToSpawnTo].transform.position-spawnPos).normalized,suns[sunToSpawnTo].transform.position+Vector3.up);
+////
+////			if(spawnPos.y > suns[sunToSpawnTo].transform.position.y)
+////			{
+////				if (angleToSun < 90 || angleToSun > 270)
+////				{
+////				
+////					angleToSun += 180;
+////				}
+////			}
+////			else
+////			{
+////				if (angleToSun > 90 && angleToSun < 270)
+////				{
+////					angleToSun += 180;
+////				}
+////			}
+////
+//			if (spawnPos.x > suns[sunToSpawnTo].transform.position.x)
+//			{
+//				angleToSun = -angleToSun + 90;
+//
+//			}
+//			else{
+//				angleToSun = angleToSun + 90;
+//			}
+//			//Quaternion rot = transform.rotation;
+//			print (angleToSun);
+			spawnRot = Quaternion.AngleAxis((angle*Mathf.Rad2Deg), Vector3.forward);
+			//spawnRot = Quaternion.Euler(0, 0, spawnRot.z);
+
+
+			GameObject tempPlayer = (GameObject)Instantiate(PlayerPrefab,spawnPos,spawnRot);
 			tempPlayer.GetComponent<PlayerScript>().MyKey = key;
 			tempPlayer.name = "Player " + i;
+
+			if (playerAroundSun % PlayersPerSun == 0)
+			{
+				if (sunToSpawnTo+1 < suns.Length)
+				{
+					sunToSpawnTo++;
+					PlayersPerSun = (int)Mathf.Floor((GlobalControlScript.GlobalControl.NumberOfPlayers-i)/(suns.Length-sunToSpawnTo));
+					angle = Mathf.PI * 2 / PlayersPerSun; 
+					playerAroundSun = 0;
+					//print (PlayersPerSun);
+				}
+				else
+				{
+					break;
+				}
+			}
+
 			i++;
+			playerAroundSun++;
 		}
 
 		targets = GameObject.FindGameObjectsWithTag ("Player");
+
+		OoB.transform.localScale = new Vector3(18+GlobalControlScript.GlobalControl.NumberOfPlayers,
+		                                       18+GlobalControlScript.GlobalControl.NumberOfPlayers);
+
 		fader.GetComponent<Fade>().sceneStarting = true;
 		
 	}
@@ -54,7 +124,7 @@ public class Control : MonoBehaviour {
 		
 		GamepadState state = GamePad.GetState(GamePad.Index.Any);
 		if (startGame == true) {
-			if (targets.Length == 1) {
+			if (targets.Length <= 1) {
 				
 				gameEnd = true;
 				
@@ -89,7 +159,7 @@ public class Control : MonoBehaviour {
 			}
 		} 
 		
-		else if (fader.GetComponent<Fade>().finished == true) {startTimer -= Time.deltaTime;}
+		else if (fader.GetComponent<Fade>().finished == false) {startTimer -= Time.deltaTime;}
 		
 		if (startTimer <= 0) {startGame = true;}
 	}
@@ -114,7 +184,7 @@ public class Control : MonoBehaviour {
 		if (startGame == false) {
 			
 			
-			GUI.Label(new Rect(Screen.width/2,Screen.height/2,200,200),((int)startTimer).ToString());
+			GUI.Label(new Rect(Screen.width/2,Screen.height/2,200,200),((int)startTimer+1).ToString());
 			GUI.skin = mainSkin;
 			GUI.Label(new Rect(Screen.width/2 - 100,Screen.height/2 - 50,500,200),"Knock the other players out!");
 		}

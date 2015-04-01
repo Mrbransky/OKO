@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class PlayerEnterScript : MonoBehaviour {
 	public GameObject GlobalControl;
+	public int MaxPlayers;
 	List<KeyCode> keysUsed = new List<KeyCode>();
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,8 @@ public class PlayerEnterScript : MonoBehaviour {
 			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}
+		GlobalControlScript.GlobalControl.KeysForPlayers.Clear();
+		GlobalControlScript.GlobalControl.NumberOfPlayers = 0;
 	}
 	
 	// Update is called once per frame
@@ -26,27 +29,29 @@ public class PlayerEnterScript : MonoBehaviour {
 //
 //			print(Input.inputString);
 //		}
-		KeyCode keyCode = FetchKey();
-		bool add = true;
-		if (keyCode != KeyCode.None)
+		if(keysUsed.Count <= MaxPlayers)
 		{
-			foreach (KeyCode key in keysUsed)
+			KeyCode keyCode = FetchKey();
+			bool add = true;
+			if (keyCode != KeyCode.None)
 			{
-				if (key == keyCode)
+				foreach (KeyCode key in keysUsed)
 				{
-					add = false;
-					break;
+					if (key == keyCode)
+					{
+						add = false;
+						break;
+					}
+				}
+				if (add)
+				{
+					keysUsed.Add(keyCode);
+					GlobalControlScript.GlobalControl.KeysForPlayers.Add(keyCode);
+					GlobalControl.GetComponent<GlobalControlScript>().NumberOfPlayers = keysUsed.Count;
 				}
 			}
-			if (add)
-			{
-				keysUsed.Add(keyCode);
-				GlobalControlScript.GlobalControl.KeysForPlayers.Add(keyCode);
-				GlobalControl.GetComponent<GlobalControlScript>().NumberOfPlayers = keysUsed.Count;
-			}
+			print(keyCode);
 		}
-		print(keyCode);
-		
 	}
 	KeyCode FetchKey()
 	{
@@ -62,7 +67,10 @@ public class PlayerEnterScript : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		GUI.Label(new Rect(10,10,200,200),"Press Key To Join!");
+		if (keysUsed.Count < MaxPlayers)
+		{
+			GUI.Label(new Rect(10,10,200,200),"Press Key To Join!");
+		}
 		int x = 10;
 		int y = 100;
 		int i = 1;

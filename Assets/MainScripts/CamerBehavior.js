@@ -16,6 +16,8 @@ function Start(){
     targets = GameObject.FindGameObjectsWithTag("Player"); 
  
     if(theCamera) isOrthographic = theCamera.orthographic;
+ 	var globalControlScript = GameObject.Find("GlobalControl").GetComponent("GlobalControlScript");
+ 	theCamera.camera.orthographicSize = 120 + (6f*globalControlScript.GlobalControl.NumberOfPlayers);
  
 }
 function OnGUI(){
