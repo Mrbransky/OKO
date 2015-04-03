@@ -49,7 +49,7 @@ public class Control : MonoBehaviour {
 		int playerAroundSun = 1;
 		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
 		{
-
+			DistAwayFromSun = 34 + (PlayersPerSun*3); 
 
 			angle += Mathf.PI * 2 / PlayersPerSun; 
 			spawnPos = suns[sunToSpawnTo].transform.position + new Vector3 (Mathf.Cos(angle), Mathf.Sin(angle)) * DistAwayFromSun;
@@ -112,8 +112,8 @@ public class Control : MonoBehaviour {
 
 		targets = GameObject.FindGameObjectsWithTag ("Player");
 
-		OoB.transform.localScale = new Vector3(18+GlobalControlScript.GlobalControl.NumberOfPlayers,
-		                                       18+GlobalControlScript.GlobalControl.NumberOfPlayers);
+		OoB.transform.localScale = new Vector3(23+GlobalControlScript.GlobalControl.NumberOfPlayers,
+		                                       23+GlobalControlScript.GlobalControl.NumberOfPlayers);
 
 		fader.GetComponent<Fade>().sceneStarting = true;
 		
@@ -153,7 +153,7 @@ public class Control : MonoBehaviour {
 				}
 				if (state.Y || Input.GetKey(KeyCode.Y)) {
 					Time.timeScale = 1;
-					Application.LoadLevel (1);
+					Application.LoadLevel (2);
 				}
 				
 			}
@@ -200,6 +200,8 @@ public class Control : MonoBehaviour {
 		{
 			//GUI.Label (new Rect (Screen.width / 2 - 300, 50, 500, 200),"Player 1 Life: " + targets [1].GetComponent<PlayerScript> ().DamageAmount);
 			//GUI.Label (new Rect (Screen.width / 2 + 300, 50, 500, 200),"Player 2 Life: " + targets [0].GetComponent<PlayerScript> ().DamageAmount);
+			//GUI.Label (new Rect (Screen.width / 2 - 400, 150, 500, 200),"Player 1 col: " + targets [1].GetComponent<PlayerScript> ().CollisionForce);
+			//GUI.Label (new Rect (Screen.width / 2 + 100, 150, 500, 200),"Player 2 col: " + targets [0].GetComponent<PlayerScript> ().CollisionForce);
 		}
 	}
 }

@@ -99,7 +99,7 @@ public class PlayerScript : MonoBehaviour {
 //			break;
 //		}
 
-		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,20))
+		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,10))
 		{
 			if ((otherObj.tag == "Player" && otherObj.gameObject != gameObject) || otherObj.tag == "Meteor")
 			{
@@ -110,7 +110,9 @@ public class PlayerScript : MonoBehaviour {
 
 		if (Mathf.Abs(CollisionForce.magnitude) > CollisionForce.normalized.magnitude)
 		{
-			CollisionForce -= CollisionForce.normalized/10;
+
+			CollisionForce -= CollisionForce.normalized/2;
+			//print (CollisionForce);
 		}
 		else
 		{
@@ -126,7 +128,7 @@ public class PlayerScript : MonoBehaviour {
 		else{
 			if (!startboosted)
 			{
-				rigidbody2D.AddForce(transform.up * 2000);
+				rigidbody2D.AddForce(transform.up * 2500);
 				startboosted = true;
 			}
 			pullForce = -35;
@@ -230,8 +232,14 @@ public class PlayerScript : MonoBehaviour {
 		if (rigidbody2D.velocity != Vector2.zero) {
 			Vector3 dir = ((Vector3)rigidbody2D.velocity-CollisionForce) - (Vector3)transform.position;
 			//float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-			float angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
-			if (rigidbody2D.velocity.normalized.x > 0)
+			float angle;
+			angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
+
+//			if (CollisionForce.x > rigidbody2D.velocity.x)
+//				angle = Vector3.Angle(((Vector3)rigidbody2D.velocity+CollisionForce).normalized,Vector3.up);
+//			else
+//				angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
+			if (((Vector3)rigidbody2D.velocity-CollisionForce).normalized.x > 0)
 			{
 				angle = -angle;
 			}
@@ -272,44 +280,51 @@ public class PlayerScript : MonoBehaviour {
 					currentAngle = -currentAngle;
 				}
 
-				movement.x = dir.x + Mathf.Cos(currentAngle * Mathf.Deg2Rad)*2;
-				movement.y = dir.y + Mathf.Sin(currentAngle * Mathf.Deg2Rad)*2;	
+				movement.x = dir.x + Mathf.Cos(currentAngle * Mathf.Deg2Rad)*3;
+				movement.y = dir.y + Mathf.Sin(currentAngle * Mathf.Deg2Rad)*3;	
 
 					//test on y
-				if (rigidbody2D.velocity.y > .75f || rigidbody2D.velocity.y < -.75f )
+				if (rigidbody2D.velocity.y > .5f || rigidbody2D.velocity.y < -.5f )
 				{
-					movement.x = dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
-					movement.y = dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
+					movement.x = dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*3;
+					movement.y = dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*3;					
 				}
 				else
 				{
-					movement.x = dir.x + Mathf.Cos(currentAngle-90 * Mathf.Deg2Rad)*2;
-					movement.y = dir.y + Mathf.Sin(currentAngle-90 * Mathf.Deg2Rad)*2;
+					movement.x = dir.x + Mathf.Cos(currentAngle-90 * Mathf.Deg2Rad)*3;
+					movement.y = dir.y + Mathf.Sin(currentAngle-90 * Mathf.Deg2Rad)*3;
 				}
 
 					//test on x
-				if (rigidbody2D.velocity.x > .75f || rigidbody2D.velocity.x < -.75f)
+				if (rigidbody2D.velocity.x > .5f || rigidbody2D.velocity.x < -.5f)
 				{
-					movement.x += dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
-					movement.y += dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
+					movement.x += dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*3;
+					movement.y += dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*3;					
 				}
 				else
 				{
-					movement.x += dir.x + Mathf.Cos(currentAngle-90 * Mathf.Deg2Rad)*2;
-					movement.y += dir.y + Mathf.Sin(currentAngle-90 * Mathf.Deg2Rad)*2;
+					movement.x += dir.x + Mathf.Cos(currentAngle-90 * Mathf.Deg2Rad)*3;
+					movement.y += dir.y + Mathf.Sin(currentAngle-90 * Mathf.Deg2Rad)*3;
 				}
 
 				movement.x = movement.x/2;
 				movement.y = movement.y/2;
 
-				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f * DamageAmount);
+				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f * DamageAmount/1.05f);
 
 //				//dir = (Quaternion.AngleAxis(90, Vector3.up) * dir)*2;
 //				//bHole.transform.position + 
 //				//orbit controls
 				//Debug.Log(gameObject.name + " " + dir);
-				Debug.DrawLine(transform.position,(transform.position + movement));
-				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity));
+				Debug.DrawLine(transform.position,(transform.position + movement),Color.red);
+				Debug.DrawLine(transform.position,(transform.position + CollisionForce),Color.yellow);
+//				if (CollisionForce.x > rigidbody2D.velocity.x)
+//					Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity + CollisionForce),Color.blue);
+//				else
+//					Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity - CollisionForce),Color.blue);
+				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity - CollisionForce),Color.blue);
+
+				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity),Color.white);
 				rigidbody2D.AddForce(-(movement.normalized) * pullForce * rigidbody2D.mass);
 				//rigidbody2D.AddForce(-(dir.normalized) * pullForce * rigidbody2D.mass);
 				//rigidbody2D.AddForce((transform.up) * pullForce/4 * rigidbody2D.mass);
@@ -359,8 +374,8 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void flipVelocity()
 	{
-		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity-CollisionForce) - velocityToFlip.normalized * 10;
-		if (((Vector3)rigidbody2D.velocity-CollisionForce).magnitude < velocityToFlip.magnitude)
+		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) - velocityToFlip.normalized * 10;
+		if (((Vector3)rigidbody2D.velocity).magnitude < velocityToFlip.magnitude)
 		{
 
 		}
