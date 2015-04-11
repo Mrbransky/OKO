@@ -12,6 +12,29 @@ public class PlayerFrontScript : MonoBehaviour {
 	void Update () {
 		transform.localPosition = new Vector3(0,5f);
 		transform.rotation = transform.parent.rotation;
+		//print (transform.position);
+		foreach (Collider2D col in Physics2D.OverlapPointAll(transform.position))
+		{
+			if(col.gameObject.tag == "FrontOfShip" && col.gameObject != gameObject)
+			{
+				if (	col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
+					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
+				else
+					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce 
+					                                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+
+				if (Parent.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
+					Parent.GetComponent<PlayerScript>().CollisionForce = (Vector3)(col.transform.parent.gameObject.rigidbody2D.velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount)/2;
+				else
+					Parent.GetComponent<PlayerScript>().CollisionForce = (Parent.GetComponent<PlayerScript>().CollisionForce 
+					                                                      +(Vector3)(col.transform.parent.gameObject.rigidbody2D.velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+
+
+				col.transform.parent.gameObject.rigidbody2D.AddForce((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*50);
+				Parent.rigidbody2D.AddForce((Vector2)Parent.GetComponent<PlayerScript>().CollisionForce*50);
+				print ("boom");
+			}
+		}
 	}
 	void OnCollisionEnter2D(Collision2D col)
 	{
