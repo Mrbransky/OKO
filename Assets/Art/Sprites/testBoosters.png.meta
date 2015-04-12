@@ -3,6 +3,28 @@ guid: 2b50659943ae49245899a220a9e7c357
 TextureImporter:
   fileIDToRecycleName:
     21300000: testBoosters
+    21300002: testBoosters_0
+    21300004: testBoosters_1
+    21300006: testBoosters_2
+    21300008: testBoosters_3
+    21300010: testBoosters_4
+    21300012: testBoosters_5
+    21300014: testBoosters_6
+    21300016: testBoosters_7
+    21300018: testBoosters_8
+    21300020: testBoosters_9
+    21300022: testBoosters_10
+    21300024: testBoosters_11
+    21300026: testBoosters_12
+    21300028: testBoosters_13
+    21300030: testBoosters_14
+    21300032: testBoosters_15
+    21300034: testBoosters_16
+    21300036: testBoosters_17
+    21300038: testBoosters_18
+    21300040: testBoosters_19
+    21300042: testBoosters_20
+    21300044: testBoosters_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -43,6 +65,226 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: testBoosters_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1421
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1421
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1291
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1291
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1161
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1161
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1031
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1031
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 901
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 771
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 641
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 641
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 511
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 381
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 381
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 251
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: testBoosters_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 121
+        width: 112
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

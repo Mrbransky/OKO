@@ -31,7 +31,7 @@ public class PlayerFrontScript : MonoBehaviour {
 
 
 				col.transform.parent.gameObject.rigidbody2D.AddForce((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*50);
-				Parent.rigidbody2D.AddForce((Vector2)Parent.GetComponent<PlayerScript>().CollisionForce*50);
+				Parent.rigidbody2D.AddForce((Vector2)Parent.GetComponent<PlayerScript>().CollisionForce*100);
 				print ("boom");
 			}
 		}
