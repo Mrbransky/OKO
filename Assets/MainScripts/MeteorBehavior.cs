@@ -6,14 +6,14 @@ public class MeteorBehavior : MonoBehaviour {
 
 	public float timer = 0;
 	public GameObject meteor;
-	public GameObject meteorShards;
-	public GameObject powerUp;
-	public int randNum;
-	bool spawnPowerUp;
+	//public GameObject meteorShards;
+	//public GameObject powerUp;
+	//public int randNum;
+	//bool spawnPowerUp;
 	// Use this for initialization
 	void Start () 
 	{
-		randNum = Random.Range (1,3);
+		//randNum = Random.Range (1,3);
 	}
 	
 	// Update is called once per frame
@@ -24,7 +24,7 @@ public class MeteorBehavior : MonoBehaviour {
 
 		if(timer <= 3)
 		{
-			this.rigidbody2D.AddForce(Random.insideUnitCircle * 100);
+			this.rigidbody2D.AddForce(Random.insideUnitCircle * 300);
 		}
 	}
 	void OnCollisionEnter2D(Collision2D collision)
@@ -32,18 +32,18 @@ public class MeteorBehavior : MonoBehaviour {
 		if(collision.gameObject.tag == "Player")
 		{
 			Vector2 meteorPosition = (meteor.transform.position);
-			Instantiate(meteorShards, meteorPosition, Quaternion.identity);
-			Instantiate(meteorShards, meteorPosition, Quaternion.identity);
-			Instantiate(meteorShards, meteorPosition, Quaternion.identity);
+			//Instantiate(meteorShards, meteorPosition, Quaternion.identity);
+			//Instantiate(meteorShards, meteorPosition, Quaternion.identity);
+			//Instantiate(meteorShards, meteorPosition, Quaternion.identity);
 
-			if(randNum == 2000)
-			{
-			Instantiate(powerUp, meteorPosition, Quaternion.identity);
-			}
-			else
-			{
-
-			}
+//			if(randNum == 2000)
+//			{
+//			Instantiate(powerUp, meteorPosition, Quaternion.identity);
+//			}
+//			else
+//			{
+//
+//			}
 			Destroy(this.gameObject);
 
 		}
