@@ -63,6 +63,7 @@ public class PlanetSpawner : MonoBehaviour {
 			}
 		}
 		planetsSpawned = true;
+		GlobalControlScript.GlobalControl.NumberOfSuns = NumberOfPlanets;
 	}
 	// Update is called once per frame
 	void Update () {

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class GlobalControlScript : MonoBehaviour {
 	public static GlobalControlScript GlobalControl;
 	public int NumberOfPlayers;
+	public int NumberOfSuns;
 	public List<KeyCode> KeysForPlayers = new List<KeyCode>();
 
 	//Thoughts On Alternate Game Modes That would not be hard to implement

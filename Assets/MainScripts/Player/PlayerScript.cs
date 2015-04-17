@@ -17,7 +17,9 @@ public class PlayerScript : MonoBehaviour {
 	public KeyCode MyKey;
 	//public float speed = 2;
 	//public Vector2 speed = new Vector2(15,15);
-	float curSpeed = 25;
+	public GameObject EngineBoost;
+
+	float curSpeed = 35;
 
 	float timer = 0;
 	float powerTimer = 4;
@@ -99,7 +101,7 @@ public class PlayerScript : MonoBehaviour {
 //			break;
 //		}
 
-		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,10))
+		foreach (Collider2D otherObj in Physics2D.OverlapCircleAll(transform.position,20))
 		{
 			if ((otherObj.tag == "Player" && otherObj.gameObject != gameObject) || otherObj.tag == "Meteor")
 			{
@@ -128,10 +130,10 @@ public class PlayerScript : MonoBehaviour {
 		else{
 			if (!startboosted)
 			{
-				rigidbody2D.AddForce(transform.up * 2500);
+				rigidbody2D.AddForce(transform.up * 3000);
 				startboosted = true;
 			}
-			pullForce = -35;
+			pullForce = -100;
 		
 		}
 
@@ -192,6 +194,7 @@ public class PlayerScript : MonoBehaviour {
 				durationBetweenPresses = Time.time - buttonPressedLastTime;
 				buttonPressedLastTime = Time.time;
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
+				EngineBoost.SetActive(true);
 			}
 			if(Input.GetKey(MyKey))
 			{
@@ -200,6 +203,7 @@ public class PlayerScript : MonoBehaviour {
 			}
 			if (Input.GetKeyUp(MyKey))
 			{
+				EngineBoost.SetActive(false);
 				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
 				{
 					facingForward = !facingForward;
@@ -241,7 +245,7 @@ public class PlayerScript : MonoBehaviour {
 //				angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
 			if (((Vector3)rigidbody2D.velocity-CollisionForce).normalized.x > 0)
 			{
-				angle = -angle;
+				angle = -(angle-2);
 			}
 //			if (facingForward)
 //			{
@@ -310,7 +314,7 @@ public class PlayerScript : MonoBehaviour {
 				movement.x = movement.x/2;
 				movement.y = movement.y/2;
 
-				movement = (movement) + (transform.up/1.5f) + (dir * 45/dist * 10f * DamageAmount/1.05f);
+				movement = ((movement*1.25f) + (transform.up/1.325f) + (dir * (55f* DamageAmount)/dist * 10f/1.05f)/ GlobalControlScript.GlobalControl.NumberOfSuns);
 
 //				//dir = (Quaternion.AngleAxis(90, Vector3.up) * dir)*2;
 //				//bHole.transform.position + 

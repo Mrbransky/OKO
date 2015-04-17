@@ -39,7 +39,7 @@ public class Control : MonoBehaviour {
 		GameObject[] suns = GameObject.FindGameObjectsWithTag("BlackHole");
 		int PlayersPerSun = (int)Mathf.Floor(GlobalControlScript.GlobalControl.NumberOfPlayers/suns.Length);
 
-		float DistAwayFromSun = 40; 
+		float DistAwayFromSun = 60; 
 		float angle = Mathf.PI * 2 / PlayersPerSun; 
 
 		Vector3 spawnPos = Vector3.zero;
@@ -49,7 +49,7 @@ public class Control : MonoBehaviour {
 		int playerAroundSun = 1;
 		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
 		{
-			DistAwayFromSun = 34 + (PlayersPerSun*3); 
+			DistAwayFromSun = 39 + (PlayersPerSun*3); 
 
 			angle += Mathf.PI * 2 / PlayersPerSun; 
 			spawnPos = suns[sunToSpawnTo].transform.position + new Vector3 (Mathf.Cos(angle), Mathf.Sin(angle)) * DistAwayFromSun;
