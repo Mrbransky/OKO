@@ -44,7 +44,7 @@ public class MeteorBehavior : MonoBehaviour {
 //			{
 //
 //			}
-			Destroy(this.gameObject);
+			DestroySelf();
 
 		}
 
@@ -53,7 +53,11 @@ public class MeteorBehavior : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "BlackHole") {
 			
-			Destroy (gameObject);
+			DestroySelf();
 		}
+	}
+	void DestroySelf()
+	{
+		Destroy (gameObject);
 	}
 }

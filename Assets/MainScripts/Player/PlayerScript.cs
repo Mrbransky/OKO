@@ -314,7 +314,7 @@ public class PlayerScript : MonoBehaviour {
 				movement.x = movement.x/2;
 				movement.y = movement.y/2;
 
-				movement = ((movement*1.25f) + (transform.up/1.325f) + (dir * (55f* DamageAmount)/dist * 10f/1.05f)/ GlobalControlScript.GlobalControl.NumberOfSuns);
+				movement = ((movement*1.25f) + (transform.up/1.325f) + (dir * (55f* DamageAmount)/dist * 10f/1.05f)/ Mathf.Pow(GlobalControlScript.GlobalControl.NumberOfSuns, (1 / 1.25f)));
 
 //				//dir = (Quaternion.AngleAxis(90, Vector3.up) * dir)*2;
 //				//bHole.transform.position + 
@@ -486,7 +486,7 @@ public class PlayerScript : MonoBehaviour {
 //				Vector3 pos = contact.point;
 //				Instantiate(bHoleDamage,pos, Quaternion.identity);
 //			}
-         	Destroy(gameObject);
+			DestroySelf();
          	Debug.Log("End Game");
     
 
@@ -596,7 +596,11 @@ public class PlayerScript : MonoBehaviour {
 	{
 		if (col.tag == "Bounds")
 		{
-			Destroy (gameObject);
+			DestroySelf();
 		}
+	}
+	void DestroySelf()
+	{
+		Destroy (gameObject);
 	}
 }
