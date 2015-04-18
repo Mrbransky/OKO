@@ -3,44 +3,66 @@ using System.Collections;
 
 public class MeteorSpawn : MonoBehaviour {
 
-
-
 	int randNum;
-	public float timer = 7;
+	public float timeSetter = 7;
+
 	private float timerCounter;
-	public GameObject meteor;
-	public GameObject MeteorSpawner;
+	private int maxRandom = 5;
+
+	public GameObject Meteor;
+	public GameObject ExplosiveMine;
+	GameObject ObjectToSpawn;
 	public GameObject control;
-	// Use this for initialization
+
+	float ElapsedGameTime;
+	public int SuddenDeathTriggerTime;
+
+
 	void Start () {
 
-		randNum = Random.Range (1, 5);
-		timerCounter = timer;
+		randNum = Random.Range (1, maxRandom);
+		timerCounter = timeSetter;
+		ObjectToSpawn = Meteor;
 	}
 	
-	// Update is called once per frame
+
 	void Update () 
 	{
 		timerCounter -= Time.deltaTime;
+		if(ElapsedGameTime < (float)SuddenDeathTriggerTime)
+		{
+		ElapsedGameTime += Time.deltaTime;
+		}
+		else if(ElapsedGameTime >= (float)SuddenDeathTriggerTime)
+		{
+			//Sudden Death
+			Debug.Log ("Sudden Death Started");
+			ObjectToSpawn = ExplosiveMine;
+			timeSetter = 2;
+			maxRandom = 3;
+		}
 
+		//Attempts to spawn meteor every seven seconds
 		if(timerCounter <= 0 && control.GetComponent<Control>().startGame)
 		{
 			SpawnMeteor();
-			timerCounter = timer;
+			timerCounter = timeSetter;
 		}
+
 	}
 	void SpawnMeteor()
 	{
 
-		if(randNum == 3)
+		if(randNum == (int)(maxRandom/2))
 		{
-			Vector2 spawnerPosition = (MeteorSpawner.transform.position);
-			Instantiate(meteor, spawnerPosition, Quaternion.identity);
-			randNum = Random.Range (1, 5);
+			Vector2 spawnerPosition = (this.transform.position);
+			Instantiate(ObjectToSpawn, spawnerPosition, Quaternion.identity);
+			//resets number to a new random number
+			randNum = Random.Range (1, maxRandom);
 		}
 		else
 		{
-			randNum = Random.Range (1, 5);
+			randNum = Random.Range (1, maxRandom);
 		}
 
 	}

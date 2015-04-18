@@ -27,11 +27,11 @@ public class PlayerScript : MonoBehaviour {
 
 	int powerUpRan;
 	string curPlayer;
-//	[Header("GamePad")]
+
 	int playerNum;
-//	[Header("GameObjects")]
+
 	public List< GameObject> bHoles = new List<GameObject>();
-	public GameObject enemyPlayer;
+//	public GameObject enemyPlayer;
 	public GameObject shield;
 	public GameObject control;
 	public GameObject explosionPrefab;
@@ -52,14 +52,14 @@ public class PlayerScript : MonoBehaviour {
 	Vector3 velocityToFlip = Vector3.zero;
 	public Vector3 CollisionForce =Vector3.zero;
 	List<GameObject> ignoreCollisionList = new List<GameObject>();
-	/*TO DO
+
+	/*TODO
 		-Better physic-based controls
 		-Implement any sounds
 		-Maybe change how orbit physics are done
 		-Animations (AFFORDANCES PLS)
 		-Decide on end screen shenanigans
-
-*/
+	*/
 
 
 	// Use this for initialization
