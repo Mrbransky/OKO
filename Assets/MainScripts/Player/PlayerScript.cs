@@ -442,7 +442,7 @@ public class PlayerScript : MonoBehaviour {
 			shield1.transform.parent = gameObject.transform;
 		}
 	}
-	void OnCollisionStay2D(Collision2D col)
+	void OnTriggerStay2D(Collider2D col)
 	{
 //		if(col.gameObject.tag == "BlackHole")
 //		{
@@ -456,6 +456,7 @@ public class PlayerScript : MonoBehaviour {
 //			}
 //			
 //		}
+
 	}
 //	void OnCollisionEnter2D(Collision2D col)
 //	{
@@ -480,6 +481,22 @@ public class PlayerScript : MonoBehaviour {
 //	}
 	void OnTriggerEnter2D(Collider2D col)
 	{
+		if(col.gameObject.tag == "MineExplosion")
+		{
+			print("Called");
+			if (CollisionForce == Vector3.zero)
+				CollisionForce = ((transform.position - col.transform.position).normalized * 
+				                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount)/2;
+			else
+				CollisionForce = (CollisionForce+((transform.position - col.transform.position).normalized * 
+				                                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount))/2;
+			
+			rigidbody2D.AddForce((Vector2)CollisionForce*1500);
+			
+			DamageAmount=DamageAmount*1.05f;  
+			
+		}
+
 		if(col.gameObject.tag == "BlackHole")
 		{
 //			foreach (ContactPoint2D contact in col.contacts) {
@@ -591,6 +608,7 @@ public class PlayerScript : MonoBehaviour {
 //
 //	}
 		}
+
 	}
 	void OnTriggerExit2D(Collider2D col)
 	{

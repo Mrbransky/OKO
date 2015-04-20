@@ -36,7 +36,7 @@ public class MeteorSpawn : MonoBehaviour {
 		else if(ElapsedGameTime >= (float)SuddenDeathTriggerTime)
 		{
 			//Sudden Death
-			Debug.Log ("Sudden Death Started");
+			//Debug.Log ("Sudden Death Started");
 			ObjectToSpawn = ExplosiveMine;
 			timeSetter = 2;
 			maxRandom = 3;
