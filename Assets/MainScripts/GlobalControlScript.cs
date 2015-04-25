@@ -11,7 +11,7 @@ public class GlobalControlScript : MonoBehaviour {
 
 	//Thoughts On Alternate Game Modes That would not be hard to implement
 	//Implemented
-	public bool OneSunOnly = true;
+	public bool OneSunOnly = false;
 	//Not Implemented
 	public bool FreezeTag = false;
 	public bool NoRadiation = false;

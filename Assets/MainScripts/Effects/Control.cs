@@ -17,12 +17,29 @@ public class Control : MonoBehaviour {
 	public float endTimeSet;
 	public bool startGame = false;
 	public float startTimer = 3;
+	public Color[] colors = new Color[16];
 	
 	float timer;
 	
 	// Use this for initialization
 	void Start () {
 
+		colors[0] = Color.red;
+		colors[1] = Color.blue;
+		colors[2] = Color.yellow;
+		colors[3] = Color.green;
+		colors[4] = Color.magenta;
+		colors[5] = Color.cyan;
+		colors[6] = new Color(.5f,.5f,0);
+		colors[7] = new Color(.5f,0,.5f);
+		colors[8] = new Color(.5f,0,0);
+		colors[9] = new Color(.5f,.25f,.25f);
+		colors[10] = new Color(.75f,0,.5f);
+		colors[11] = new Color(0,.5f,.75f);
+		colors[12] = new Color(.5f,.5f,0);
+		colors[13] = new Color(.5f,.5f,0);
+		colors[14] = new Color(.5f,.5f,0);
+		colors[15] = new Color(.5f,.5f,0);
 		if (GameObject.Find("GlobalControl") != null)
 		{
 			GlobalControl = GameObject.Find("GlobalControl");
@@ -89,6 +106,7 @@ public class Control : MonoBehaviour {
 			GameObject tempPlayer = (GameObject)Instantiate(PlayerPrefab,spawnPos,spawnRot);
 			tempPlayer.GetComponent<PlayerScript>().MyKey = key;
 			tempPlayer.name = "Player " + i;
+			tempPlayer.GetComponent<SpriteRenderer>().color = colors[i-1];
 
 			if (playerAroundSun % PlayersPerSun == 0)
 			{
