@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour {
 	public bool shieldOn = false;
 
     public float DamageAmount;
+	public float MaxDamageAmount;
 	public AudioClip impact;
 
 	public KeyCode MyKey;
@@ -84,6 +85,10 @@ public class PlayerScript : MonoBehaviour {
 		if (DamageAmount <= 0) {
 				
 			isDisabled = true;
+		}
+		if (DamageAmount >MaxDamageAmount)
+		{
+			DamageAmount = MaxDamageAmount;
 		}
 		//THIS IS THE THING THAT CONTROLS THE THINGS
 		//			|
@@ -401,8 +406,8 @@ public class PlayerScript : MonoBehaviour {
 		// Center the label over the coordinates
 		boxPosition.x -= 50 * 0.5f;
 		boxPosition.y -= 100 * 0.5f;
-		if (!startboosted)
-			GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), name);
+		//if (!startboosted)
+		GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), MyKey.ToString());
 	}
 
 //-----------------------------------
@@ -483,7 +488,7 @@ public class PlayerScript : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "MineExplosion")
 		{
-			print("Called");
+			//print("Called");
 			if (CollisionForce == Vector3.zero)
 				CollisionForce = ((transform.position - col.transform.position).normalized * 
 				                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount)/2;
@@ -619,6 +624,7 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void DestroySelf()
 	{
+		Instantiate(explosionPrefab,transform.position,new Quaternion(0,0,0,0));
 		Destroy (gameObject);
 	}
 }

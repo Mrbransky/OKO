@@ -66,7 +66,7 @@ public class Control : MonoBehaviour {
 		int playerAroundSun = 1;
 		foreach (KeyCode key in GlobalControlScript.GlobalControl.KeysForPlayers)
 		{
-			DistAwayFromSun = 39 + (PlayersPerSun*3); 
+			DistAwayFromSun = 45 + (PlayersPerSun*3); 
 
 			angle += Mathf.PI * 2 / PlayersPerSun; 
 			spawnPos = suns[sunToSpawnTo].transform.position + new Vector3 (Mathf.Cos(angle), Mathf.Sin(angle)) * DistAwayFromSun;

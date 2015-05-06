@@ -6,6 +6,7 @@ public class Destroy : MonoBehaviour {
 	public bool DestroyAfterAmountOfTime = false;
 	public float DestroyTime = 0;
 	float spawnTime = 0;
+	public bool Fade = false;
 	// Use this for initialization
 	void Start () {
 		spawnTime = Time.time;
@@ -19,6 +20,12 @@ public class Destroy : MonoBehaviour {
 			{
 				DestroySelf();
 			}
+		}
+		if (Fade)
+		{
+			Color c = GetComponent<SpriteRenderer>().color;
+			c.a -= (DestroyTime/100);
+			GetComponent<SpriteRenderer>().color = c;
 		}
 	}
 	void OnTriggerEnter2D(Collider2D col)

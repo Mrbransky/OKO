@@ -8,7 +8,7 @@ public class PlayerEnterScript : MonoBehaviour {
 	List<KeyCode> keysUsed = new List<KeyCode>();
 	// Use this for initialization
 	void Start () {
-		MaxPlayers--;
+		//MaxPlayers--;
 
 		if (GameObject.Find("GlobalControl") != null)
 		{

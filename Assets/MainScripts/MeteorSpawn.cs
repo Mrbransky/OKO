@@ -15,25 +15,35 @@ public class MeteorSpawn : MonoBehaviour {
 	public GameObject control;
 
 	float ElapsedGameTime;
-	public int SuddenDeathTriggerTime;
-
-
+	public int SuddenDeathTriggerTimePerPlayer;
+	float SuddenDeathTriggerTime = 0;
+	int lastAmountOfPlayers = 0;
+	int amountOfPlayers = 0;
 	void Start () {
 
 		randNum = Random.Range (1, maxRandom);
 		timerCounter = timeSetter;
 		ObjectToSpawn = Meteor;
+		SuddenDeathTriggerTime = SuddenDeathTriggerTimePerPlayer * GlobalControlScript.GlobalControl.NumberOfPlayers;
 	}
 	
 
 	void Update () 
 	{
+		lastAmountOfPlayers = amountOfPlayers;
+		amountOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+
+		if (amountOfPlayers < lastAmountOfPlayers)
+		{
+			SuddenDeathTriggerTime = ElapsedGameTime +(SuddenDeathTriggerTimePerPlayer * amountOfPlayers);
+		}
+
 		timerCounter -= Time.deltaTime;
-		if(ElapsedGameTime < (float)SuddenDeathTriggerTime)
+		if(ElapsedGameTime < SuddenDeathTriggerTime)
 		{
 		ElapsedGameTime += Time.deltaTime;
 		}
-		else if(ElapsedGameTime >= (float)SuddenDeathTriggerTime)
+		else if(ElapsedGameTime >= SuddenDeathTriggerTime)
 		{
 			//Sudden Death
 			//Debug.Log ("Sudden Death Started");
