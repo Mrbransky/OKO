@@ -62,7 +62,7 @@ public class Menu : MonoBehaviour {
 		}
 		if(col.gameObject.name == "Instructions" && (state.A || Input.GetKey(KeyCode.Space)))
 		{
-			Application.LoadLevel(2);
+			Application.LoadLevel(3);
 		}
 		if(col.gameObject.name == "Quit" && (state.A || Input.GetKey(KeyCode.Space)))
 		{
