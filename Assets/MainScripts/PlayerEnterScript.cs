@@ -32,7 +32,7 @@ public class PlayerEnterScript : MonoBehaviour {
 //
 //			print(Input.inputString);
 //		}
-		if(keysUsed.Count <= MaxPlayers)
+		if(keysUsed.Count < MaxPlayers)
 		{
 			KeyCode keyCode = FetchKey();
 			bool add = true;
@@ -74,6 +74,7 @@ public class PlayerEnterScript : MonoBehaviour {
 		{
 			GUI.Label(new Rect(10,10,200,200),"Press Key To Join!");
 		}
+		GUI.Label(new Rect(10,40,400,200),"Tap Key to Boost! Double Tap to Flip Direction!");
 		int x = 10;
 		int y = 100;
 		int i = 1;

@@ -402,12 +402,13 @@ public class PlayerScript : MonoBehaviour {
 		
 		// "Flip" it into screen coordinates
 		boxPosition.y = Screen.height - boxPosition.y;
-		
+		GUIStyle TextStyle = new GUIStyle();
+		TextStyle.normal.textColor = Color.black;
 		// Center the label over the coordinates
-		boxPosition.x -= 50 * 0.5f;
-		boxPosition.y -= 100 * 0.5f;
+		boxPosition.x -= 10 * 0.5f;
+		boxPosition.y -= 75 * 0.5f;
 		//if (!startboosted)
-		GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), MyKey.ToString());
+		GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), MyKey.ToString(), TextStyle);
 	}
 
 //-----------------------------------

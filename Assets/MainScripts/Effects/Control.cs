@@ -24,22 +24,22 @@ public class Control : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		colors[0] = Color.red;
-		colors[1] = Color.blue;
-		colors[2] = Color.yellow;
-		colors[3] = Color.green;
-		colors[4] = Color.magenta;
-		colors[5] = Color.cyan;
-		colors[6] = new Color(.5f,.5f,0);
-		colors[7] = new Color(.5f,0,.5f);
-		colors[8] = new Color(.5f,0,0);
-		colors[9] = new Color(.5f,.25f,.25f);
-		colors[10] = new Color(.75f,0,.5f);
-		colors[11] = new Color(0,.5f,.75f);
-		colors[12] = new Color(.5f,.5f,0);
-		colors[13] = new Color(.5f,.5f,0);
-		colors[14] = new Color(.5f,.5f,0);
-		colors[15] = new Color(.5f,.5f,0);
+		colors[0] = new Color32((byte)204,(byte)51,(byte)63,(byte)175);
+		colors[1] = new Color32((byte)0,(byte)160,(byte)176,(byte)175);
+		colors[2] = new Color32((byte)237,(byte)201,(byte)81,(byte)175);
+		colors[3] = new Color32((byte)81,(byte)149,(byte)72,(byte)175);
+		colors[4] = new Color32((byte)219,(byte)139,(byte)178,(byte)175);
+		colors[5] = new Color32((byte)40,(byte)38,(byte)52,(byte)175);
+		colors[6] = new Color32((byte)0,(byte)105,(byte)255,(byte)175);
+		colors[7] = new Color32((byte)255,(byte)59,(byte)47,(byte)175);
+		colors[8] = new Color32((byte)199,(byte)255,(byte)0,(byte)175);
+		colors[9] = new Color32((byte)30,(byte)202,(byte)89,(byte)175);
+		colors[10] = new Color32((byte)126,(byte)73,(byte)231,(byte)175);
+		colors[11] = new Color32((byte)40,(byte)30,(byte)29,(byte)175);
+		colors[12] = new Color32((byte)255,(byte)252,(byte)44,(byte)175);
+		colors[13] = new Color32((byte)218,(byte)222,(byte)224,(byte)175);
+		colors[14] = new Color32((byte)98,(byte)140,(byte)94,(byte)175);
+		colors[15] = new Color32((byte)245,(byte)105,(byte)145,(byte)175);
 		if (GameObject.Find("GlobalControl") != null)
 		{
 			GlobalControl = GameObject.Find("GlobalControl");
