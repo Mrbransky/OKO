@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour {
 	//public float speed = 2;
 	//public Vector2 speed = new Vector2(15,15);
 	public GameObject EngineBoost;
-
+	public GameObject AtmosphereEffect;
 	float curSpeed = 35;
 
 	float timer = 0;
@@ -36,7 +36,7 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject shield;
 	public GameObject control;
 	public GameObject explosionPrefab;
-	public GameObject bHoleDamage;
+	public float AtmosphereDamage;
 	//public Vector3 axis = Vector3.up;
 	//public Vector3 desiredPosition;
 	//public float radius = 2.0f;
@@ -462,7 +462,12 @@ public class PlayerScript : MonoBehaviour {
 //			}
 //			
 //		}
-
+		if (col.tag == "Atmosphere")
+		{
+			DamageAmount += AtmosphereDamage;
+			AtmosphereEffect.SetActive(true);
+			AtmosphereEffect.transform.rotation = Quaternion.LookRotation(transform.position-col.transform.position);
+		}
 	}
 //	void OnCollisionEnter2D(Collision2D col)
 //	{
@@ -621,6 +626,10 @@ public class PlayerScript : MonoBehaviour {
 		if (col.tag == "Bounds")
 		{
 			DestroySelf();
+		}
+		if (col.tag == "Atmosphere")
+		{
+			AtmosphereEffect.SetActive(false);
 		}
 	}
 	void DestroySelf()
