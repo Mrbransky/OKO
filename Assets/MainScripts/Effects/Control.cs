@@ -20,9 +20,15 @@ public class Control : MonoBehaviour {
 	public Color[] colors = new Color[16];
 	
 	float timer;
-	
+
+    private soundManager SM;
+    private int timerInt;
+
 	// Use this for initialization
 	void Start () {
+
+        //SoundManager
+        SM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<soundManager>();
 
 		colors[0] = new Color32((byte)204,(byte)51,(byte)63,(byte)175);
 		colors[1] = new Color32((byte)0,(byte)160,(byte)176,(byte)175);

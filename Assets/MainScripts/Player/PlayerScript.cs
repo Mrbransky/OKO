@@ -54,6 +54,8 @@ public class PlayerScript : MonoBehaviour {
 	public Vector3 CollisionForce =Vector3.zero;
 	List<GameObject> ignoreCollisionList = new List<GameObject>();
 
+    private soundManager SM;
+
 	/*TODO
 		-Better physic-based controls
 		-Implement any sounds
@@ -77,6 +79,9 @@ public class PlayerScript : MonoBehaviour {
 			myCamera = GameObject.Find("Main Camera");
 		else
 			Debug.LogError("NO 'Main Camera' FOUND!");
+
+        //SoundManager
+        SM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<soundManager>();
 	}
 	
 
@@ -200,6 +205,9 @@ public class PlayerScript : MonoBehaviour {
 				buttonPressedLastTime = Time.time;
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
 				EngineBoost.SetActive(true);
+
+                //sound for thrusters
+                SM.ThrusterFunction(true);
 			}
 			if(Input.GetKey(MyKey))
 			{
@@ -222,6 +230,9 @@ public class PlayerScript : MonoBehaviour {
 					lastButtonPressedDuration = buttonPressedDuration;
 					buttonPressedDuration = 0;
 				}
+
+                //stops thruster sound
+                SM.ThrusterFunction(false);
 			}
 		}
 		else
@@ -537,7 +548,7 @@ public class PlayerScript : MonoBehaviour {
 			//rigidbody2D.AddForce(((col.transform.position).normalized) * Mathf.Pow(2,10/(LifeTotal+1))* rigidbody2D.mass);
 			//col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.position.normalized * Mathf.Pow(2,10/(col.gameObject.GetComponent<PlayerScript>().LifeTotal + 1))* rigidbody2D.mass);
 
-			audio.PlayOneShot(impact);
+			//audio.PlayOneShot(impact);
 //			myCamera.GetComponent<CameraShakeScript>().Shake(.5f);
 //			foreach (ContactPoint2D contact in col.contacts) {
 //				Vector3 pos = contact.point;
@@ -634,6 +645,10 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void DestroySelf()
 	{
+        //explosion sound
+        SM.explosionFunction();
+        SM.KnockOutFunction();
+
 		Instantiate(explosionPrefab,transform.position,new Quaternion(0,0,0,0));
 		Destroy (gameObject);
 	}
