@@ -1,0 +1,2519 @@
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7640G (ID=0x9903)
+    Vendor:   ATI
+    VRAM:     497 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.126 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.606369 ms
+System memory in use before: 37.4 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 11.5 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 189.
+Total: 10.168973 ms (FindLiveObjects: 0.032397 ms CreateObjectMapping: 0.015658 ms MarkObjects: 0.131209 ms  DeleteObjects: 7.124166 ms)
+
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\System.dll (this message is harmless)
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+A
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+D
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+None
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerEnterScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\PlayerEnterScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+UnloadTime: 0.605829 ms
+System memory in use before: 38.4 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 38.3 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 475.
+Total: 3.100961 ms (FindLiveObjects: 0.030237 ms CreateObjectMapping: 0.022138 ms MarkObjects: 0.312094 ms  DeleteObjects: 0.011879 ms)
+
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Builds\0.01.00 5-23-15\OKO_Data\Managed\System.Core.dll (this message is harmless)
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+BackgroundScript:Start() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\BackgroundScript.cs:34)
+ 
+(Filename: C Line: 0)
+
+boom
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:35)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+UnloadTime: 1.254855 ms
+System memory in use before: 38.5 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 38.5 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 474.
+Total: 2.666298 ms (FindLiveObjects: 0.026457 ms CreateObjectMapping: 0.022678 ms MarkObjects: 0.354210 ms  DeleteObjects: 0.007559 ms)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+BackgroundScript:Start() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\BackgroundScript.cs:34)
+ 
+(Filename: C Line: 0)
+
+End Game
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerScript:OnTriggerEnter2D(Collider2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerScript.cs:532)
+ 
+(Filename: C Line: 0)
+
+UnloadTime: 1.299131 ms
+System memory in use before: 38.5 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 38.5 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 474.
+Total: 2.396320 ms (FindLiveObjects: 0.026457 ms CreateObjectMapping: 0.019978 ms MarkObjects: 0.357990 ms  DeleteObjects: 0.008099 ms)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+BackgroundScript:Start() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\BackgroundScript.cs:34)
+ 
+(Filename: C Line: 0)
+
+boom
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:35)
+ 
+(Filename: C Line: 0)
+
+boom
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:Update() (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:35)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+HIT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+PlayerFrontScript:OnCollisionEnter2D(Collision2D) (at C:\Users\micha_000\Desktop\MichaelPattengale\OKO\Assets\MainScripts\Player\PlayerFrontScript.cs:56)
+ 
+(Filename: C Line: 0)
+
+UnloadTime: 1.563169 ms
+System memory in use before: 38.5 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 38.3 MB.
+
+Unloading 201 unused Assets to reduce memory usage. Loaded Objects now: 225.
+Total: 3.357440 ms (FindLiveObjects: 0.023218 ms CreateObjectMapping: 0.021598 ms MarkObjects: 0.232720 ms  DeleteObjects: 0.840170 ms)
+

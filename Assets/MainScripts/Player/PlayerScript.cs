@@ -82,6 +82,7 @@ public class PlayerScript : MonoBehaviour {
 
         //SoundManager
         SM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<soundManager>();
+		EngineBoost.SetActive(true);
 	}
 	
 
@@ -204,7 +205,8 @@ public class PlayerScript : MonoBehaviour {
 				durationBetweenPresses = Time.time - buttonPressedLastTime;
 				buttonPressedLastTime = Time.time;
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
-				EngineBoost.SetActive(true);
+				//EngineBoost.SetActive(true);
+				EngineBoost.GetComponent<Animator>().SetBool("ButtonPressed",true);
 
                 //sound for thrusters
                 SM.ThrusterFunction(true);
@@ -216,8 +218,9 @@ public class PlayerScript : MonoBehaviour {
 			}
 			if (Input.GetKeyUp(MyKey))
 			{
-				EngineBoost.SetActive(false);
-				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= 1f)
+				EngineBoost.GetComponent<Animator>().SetBool("ButtonPressed",false);
+				//EngineBoost.SetActive(false);
+				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= .75f)
 				{
 					facingForward = !facingForward;
 					//rigidbody2D.velocity = -rigidbody2D.velocity;
