@@ -32,7 +32,7 @@ public class BackgroundScript : MonoBehaviour {
 		}
 		else{
 			print (GlobalControlScript.GlobalControl.NumberOfPlayers);
-			transform.localScale = new Vector3(.15f+(.1f*GlobalControlScript.GlobalControl.NumberOfPlayers),.15f+(.1f*GlobalControlScript.GlobalControl.NumberOfPlayers));
+			transform.localScale = new Vector3(.175f+(.075f*GlobalControlScript.GlobalControl.NumberOfPlayers),.175f+(.075f*GlobalControlScript.GlobalControl.NumberOfPlayers));
 		}
 
 	}

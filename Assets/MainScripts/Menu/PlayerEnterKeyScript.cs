@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerEnterKeyScript : MonoBehaviour {
 	public KeyCode myKey;
 	float buttonpressedTime = 0;
-	float timeToDelete = 3;
+	float timeToDelete = 2;
 	public GameObject playerEnterController;
 	bool JustSpawned = false;
 	bool timeSet = false;
