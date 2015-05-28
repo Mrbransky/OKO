@@ -4,12 +4,13 @@ using System.Collections.Generic;
 
 public class PlayerEnterScript : MonoBehaviour {
 	public GameObject GlobalControl;
+	public GameObject PlayerEnterKeyObject;
 	public int MaxPlayers;
 	List<KeyCode> keysUsed = new List<KeyCode>();
 	// Use this for initialization
 	void Start () {
 		//MaxPlayers--;
-
+		Time.timeScale = 1;
 		if (GameObject.Find("GlobalControl") != null)
 		{
 			GlobalControl = GameObject.Find("GlobalControl");
@@ -49,6 +50,10 @@ public class PlayerEnterScript : MonoBehaviour {
 				if (add)
 				{
 					keysUsed.Add(keyCode);
+
+					GameObject tempPlayerEnterKeyObject = (GameObject)Instantiate(PlayerEnterKeyObject);
+					tempPlayerEnterKeyObject.GetComponent<PlayerEnterKeyScript>().myKey = keyCode;
+
 					GlobalControlScript.GlobalControl.KeysForPlayers.Add(keyCode);
 					GlobalControl.GetComponent<GlobalControlScript>().NumberOfPlayers = keysUsed.Count;
 				}
@@ -56,12 +61,18 @@ public class PlayerEnterScript : MonoBehaviour {
 			print(keyCode);
 		}
 	}
+	public void RemoveKey(KeyCode key)
+	{
+		keysUsed.Remove(key);
+		GlobalControlScript.GlobalControl.KeysForPlayers.Remove(key);
+		GlobalControl.GetComponent<GlobalControlScript>().NumberOfPlayers = keysUsed.Count;
+	}
 	KeyCode FetchKey()
 	{
 		int e = System.Enum.GetNames(typeof(KeyCode)).Length;
 		for(int i = 0; i < e; i++)
 		{
-			if(Input.GetKey((KeyCode)i))
+			if(Input.GetKeyDown((KeyCode)i))
 			{
 				return (KeyCode)i;
 			}
@@ -72,9 +83,13 @@ public class PlayerEnterScript : MonoBehaviour {
 	{
 		if (keysUsed.Count < MaxPlayers)
 		{
-			GUI.Label(new Rect(10,10,200,200),"Press Key To Join!");
+			GUI.Label(new Rect(10,10,400,200),"Press Key To Add Player With That Key!");
 		}
-		GUI.Label(new Rect(10,40,400,200),"Tap Key to Boost! Double Tap to Flip Direction!");
+		if (keysUsed.Count >= 1)
+		{
+			GUI.Label(new Rect(10,40,400,200),"Hold Key Down to Remove Player!");
+		}
+		GUI.Label(new Rect(10,70,400,200),"Tap Key to Boost! Double Tap to Flip Direction!");
 		int x = 10;
 		int y = 100;
 		int i = 1;

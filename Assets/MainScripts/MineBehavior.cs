@@ -5,15 +5,20 @@ public class MineBehavior : MonoBehaviour {
 
 	public GameObject MineExplosion;
 	public float timer = 0;
+	void Start()
+	{
 
+	}
 	// Update is called once per frame
 	void Update () {
-	
+		
 		timer += Time.deltaTime;
 		
 		if(timer <= 1)
 		{
 			this.rigidbody2D.AddForce(Random.insideUnitCircle * 300);
+			float rand = Random.Range(10,30);
+			rigidbody2D.AddTorque(rand);
 		}
 	}
 	void OnCollisionEnter2D(Collision2D collision)
