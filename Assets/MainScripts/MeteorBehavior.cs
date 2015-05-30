@@ -24,7 +24,7 @@ public class MeteorBehavior : MonoBehaviour {
 
 		if(timer <= 3)
 		{
-			this.rigidbody2D.AddForce(Random.insideUnitCircle * 300);
+			this.GetComponent<Rigidbody2D>().AddForce(Random.insideUnitCircle * 300);
 		}
 	}
 	void OnCollisionEnter2D(Collision2D collision)

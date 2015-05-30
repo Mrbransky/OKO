@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Exploder2D : Exploder {
 	public override void disableCollider() {
-		if (collider2D) {
-			wasTrigger = collider2D.isTrigger;
-			collider2D.isTrigger = true;
+		if (GetComponent<Collider2D>()) {
+			wasTrigger = GetComponent<Collider2D>().isTrigger;
+			GetComponent<Collider2D>().isTrigger = true;
 		}
 	}
 	
 	public override void enableCollider() {
-		if (collider2D) {
-			collider2D.isTrigger = wasTrigger;
+		if (GetComponent<Collider2D>()) {
+			GetComponent<Collider2D>().isTrigger = wasTrigger;
 		}
 	}
 

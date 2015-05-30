@@ -43,15 +43,15 @@ public class Menu : MonoBehaviour {
 		GamepadState state = GamePad.GetState(GamePad.Index.Any);
 		if(col.gameObject.name == "Play")
 		{
-			col.transform.parent.renderer.enabled = true;
+			col.transform.parent.GetComponent<Renderer>().enabled = true;
 		}
 		if(col.gameObject.name == "Instructions")
 		{
-			col.transform.parent.renderer.enabled = true;
+			col.transform.parent.GetComponent<Renderer>().enabled = true;
 		}
 		if(col.gameObject.name == "Quit")
 		{
-			col.transform.parent.renderer.enabled = true;
+			col.transform.parent.GetComponent<Renderer>().enabled = true;
 		}
 
 
@@ -72,6 +72,6 @@ public class Menu : MonoBehaviour {
 	}
 	void OnTriggerExit2D(Collider2D col)
 	{
-		col.transform.parent.renderer.enabled = false;
+		col.transform.parent.GetComponent<Renderer>().enabled = false;
 	}
 }

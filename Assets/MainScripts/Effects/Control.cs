@@ -53,7 +53,7 @@ public class Control : MonoBehaviour {
 		}
 		else{
 			GameObject globalcontrol = new GameObject();
-			globalcontrol.AddComponent("GlobalControlScript");
+			globalcontrol.AddComponent<GlobalControlScript>();
 			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}

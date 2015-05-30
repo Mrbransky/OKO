@@ -116,7 +116,7 @@ public class PlayerScript : MonoBehaviour {
 		{
 			if ((otherObj.tag == "Player" && otherObj.gameObject != gameObject) || otherObj.tag == "Meteor")
 			{
-				rigidbody2D.AddForce((transform.position - otherObj.transform.position).normalized * -2 * rigidbody2D.mass);
+				GetComponent<Rigidbody2D>().AddForce((transform.position - otherObj.transform.position).normalized * -2 * GetComponent<Rigidbody2D>().mass);
 		
 			}
 		}
@@ -141,7 +141,7 @@ public class PlayerScript : MonoBehaviour {
 		else{
 			if (!startboosted)
 			{
-				rigidbody2D.AddForce(transform.up * 3000);
+				GetComponent<Rigidbody2D>().AddForce(transform.up * 3000);
 				startboosted = true;
 			}
 			pullForce = -100;
@@ -214,7 +214,7 @@ public class PlayerScript : MonoBehaviour {
 			if(Input.GetKey(MyKey))
 			{
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
-				rigidbody2D.AddForce(transform.up*curSpeed);
+				GetComponent<Rigidbody2D>().AddForce(transform.up*curSpeed);
 			}
 			if (Input.GetKeyUp(MyKey))
 			{
@@ -225,7 +225,7 @@ public class PlayerScript : MonoBehaviour {
 					facingForward = !facingForward;
 					//rigidbody2D.velocity = -rigidbody2D.velocity;
 					flipping = true;
-					velocityToFlip = rigidbody2D.velocity;
+					velocityToFlip = GetComponent<Rigidbody2D>().velocity;
 					lastButtonPressedDuration = 100;
 					buttonPressedDuration = 0;
 				}
@@ -252,17 +252,17 @@ public class PlayerScript : MonoBehaviour {
 			
 		}
 
-		if (rigidbody2D.velocity != Vector2.zero) {
-			Vector3 dir = ((Vector3)rigidbody2D.velocity-CollisionForce) - (Vector3)transform.position;
+		if (GetComponent<Rigidbody2D>().velocity != Vector2.zero) {
+			Vector3 dir = ((Vector3)GetComponent<Rigidbody2D>().velocity-CollisionForce) - (Vector3)transform.position;
 			//float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 			float angle;
-			angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
+			angle = Vector3.Angle(((Vector3)GetComponent<Rigidbody2D>().velocity-CollisionForce).normalized,Vector3.up);
 
 //			if (CollisionForce.x > rigidbody2D.velocity.x)
 //				angle = Vector3.Angle(((Vector3)rigidbody2D.velocity+CollisionForce).normalized,Vector3.up);
 //			else
 //				angle = Vector3.Angle(((Vector3)rigidbody2D.velocity-CollisionForce).normalized,Vector3.up);
-			if (((Vector3)rigidbody2D.velocity-CollisionForce).normalized.x > 0)
+			if (((Vector3)GetComponent<Rigidbody2D>().velocity-CollisionForce).normalized.x > 0)
 			{
 				angle = -(angle-2);
 			}
@@ -307,7 +307,7 @@ public class PlayerScript : MonoBehaviour {
 				movement.y = dir.y + Mathf.Sin(currentAngle * Mathf.Deg2Rad)*3;	
 
 					//test on y
-				if (rigidbody2D.velocity.y > .5f || rigidbody2D.velocity.y < -.5f )
+				if (GetComponent<Rigidbody2D>().velocity.y > .5f || GetComponent<Rigidbody2D>().velocity.y < -.5f )
 				{
 					movement.x = dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*3;
 					movement.y = dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*3;					
@@ -319,7 +319,7 @@ public class PlayerScript : MonoBehaviour {
 				}
 
 					//test on x
-				if (rigidbody2D.velocity.x > .5f || rigidbody2D.velocity.x < -.5f)
+				if (GetComponent<Rigidbody2D>().velocity.x > .5f || GetComponent<Rigidbody2D>().velocity.x < -.5f)
 				{
 					movement.x += dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*3;
 					movement.y += dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*3;					
@@ -345,10 +345,10 @@ public class PlayerScript : MonoBehaviour {
 //					Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity + CollisionForce),Color.blue);
 //				else
 //					Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity - CollisionForce),Color.blue);
-				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity - CollisionForce),Color.blue);
+				Debug.DrawLine(transform.position,(transform.position + (Vector3)GetComponent<Rigidbody2D>().velocity - CollisionForce),Color.blue);
 
-				Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity),Color.white);
-				rigidbody2D.AddForce(-(movement.normalized) * pullForce * rigidbody2D.mass);
+				Debug.DrawLine(transform.position,(transform.position + (Vector3)GetComponent<Rigidbody2D>().velocity),Color.white);
+				GetComponent<Rigidbody2D>().AddForce(-(movement.normalized) * pullForce * GetComponent<Rigidbody2D>().mass);
 				//rigidbody2D.AddForce(-(dir.normalized) * pullForce * rigidbody2D.mass);
 				//rigidbody2D.AddForce((transform.up) * pullForce/4 * rigidbody2D.mass);
 			}
@@ -397,14 +397,14 @@ public class PlayerScript : MonoBehaviour {
 	}
 	void flipVelocity()
 	{
-		rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity) - velocityToFlip.normalized * 10;
-		if (((Vector3)rigidbody2D.velocity).magnitude < velocityToFlip.magnitude)
+		GetComponent<Rigidbody2D>().velocity =  ((Vector3)GetComponent<Rigidbody2D>().velocity) - velocityToFlip.normalized * 10;
+		if (((Vector3)GetComponent<Rigidbody2D>().velocity).magnitude < velocityToFlip.magnitude)
 		{
 
 		}
 		else
 		{
-			rigidbody2D.velocity =  ((Vector3)rigidbody2D.velocity+CollisionForce) + velocityToFlip.normalized * 10;
+			GetComponent<Rigidbody2D>().velocity =  ((Vector3)GetComponent<Rigidbody2D>().velocity+CollisionForce) + velocityToFlip.normalized * 10;
 			flipping = false;
 		}
 	}
@@ -433,7 +433,7 @@ public class PlayerScript : MonoBehaviour {
 		if(isDisabled == false)
 		{
 			//move in direction of current joystick
-			rigidbody2D.AddForce(state.LeftStickAxis*curSpeed);
+			GetComponent<Rigidbody2D>().AddForce(state.LeftStickAxis*curSpeed);
 			
 			//rigidbody2D.velocity = new Vector2(Mathf.Lerp(0, Input.GetAxis("Horizontal")* curSpeed, 0.8f),Mathf.Lerp(0, Input.GetAxis("Vertical")* curSpeed, 0.8f));
 		}
@@ -516,7 +516,7 @@ public class PlayerScript : MonoBehaviour {
 				CollisionForce = (CollisionForce+((transform.position - col.transform.position).normalized * 
 				                                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount))/2;
 			
-			rigidbody2D.AddForce((Vector2)CollisionForce*1500);
+			GetComponent<Rigidbody2D>().AddForce((Vector2)CollisionForce*1500);
 			
 			DamageAmount=DamageAmount*1.05f;  
 			

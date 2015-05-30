@@ -18,20 +18,20 @@ public class PlayerFrontScript : MonoBehaviour {
 			if(col.gameObject.tag == "FrontOfShip" && col.gameObject != gameObject)
 			{
 				if (	col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
-					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
+					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
 				else
 					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce 
-					                                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+					                                                                               +(Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 
 				if (Parent.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
-					Parent.GetComponent<PlayerScript>().CollisionForce = (Vector3)(col.transform.parent.gameObject.rigidbody2D.velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount)/2;
+					Parent.GetComponent<PlayerScript>().CollisionForce = (Vector3)(col.transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount)/2;
 				else
 					Parent.GetComponent<PlayerScript>().CollisionForce = (Parent.GetComponent<PlayerScript>().CollisionForce 
-					                                                      +(Vector3)(col.transform.parent.gameObject.rigidbody2D.velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+					                                                      +(Vector3)(col.transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity)/(2f/Parent.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 
 
-				col.transform.parent.gameObject.rigidbody2D.AddForce((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*50);
-				Parent.rigidbody2D.AddForce((Vector2)Parent.GetComponent<PlayerScript>().CollisionForce*10);
+				col.transform.parent.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*50);
+				Parent.GetComponent<Rigidbody2D>().AddForce((Vector2)Parent.GetComponent<PlayerScript>().CollisionForce*10);
 				print ("boom");
 			}
 		}
@@ -41,15 +41,15 @@ public class PlayerFrontScript : MonoBehaviour {
 		if(col.gameObject.tag == "Player" && col.gameObject != Parent)
 		{
 			if (	col.gameObject.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
-				col.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.rigidbody2D.velocity)/(2f/col.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
+				col.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
 			else
 			col.gameObject.GetComponent<PlayerScript>().CollisionForce = (col.gameObject.GetComponent<PlayerScript>().CollisionForce 
-			                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+			                                                               +(Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 				
 			foreach (ContactPoint2D contact in col.contacts) {
 					//				Vector3 pos = contact.point;
 					//				Instantiate(bHoleDamage,pos, Quaternion.identity);
-				col.gameObject.rigidbody2D.AddForceAtPosition((Vector2)col.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);
+				col.gameObject.GetComponent<Rigidbody2D>().AddForceAtPosition((Vector2)col.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);
 			}
 				
 				
@@ -59,15 +59,15 @@ public class PlayerFrontScript : MonoBehaviour {
 		else if(col.gameObject.tag == "FrontOfShip" && col.gameObject != gameObject)
 		{
 			if (	col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
-				col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
+				col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
 			else
 			col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce 
-			                                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
+			                                                                               +(Vector3)(Parent.GetComponent<Rigidbody2D>().velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 			
 			foreach (ContactPoint2D contact in col.contacts) {
 				//				Vector3 pos = contact.point;
 				//				Instantiate(bHoleDamage,pos, Quaternion.identity);
-				col.transform.parent.gameObject.rigidbody2D.AddForceAtPosition((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);
+				col.transform.parent.gameObject.GetComponent<Rigidbody2D>().AddForceAtPosition((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);
 			}
 			
 			
@@ -81,7 +81,7 @@ public class PlayerFrontScript : MonoBehaviour {
 		{
 			if(otherObj.transform != transform.parent)
 			{
-				otherObj.rigidbody2D.AddForce(transform.parent.gameObject.rigidbody2D.velocity);
+				otherObj.GetComponent<Rigidbody2D>().AddForce(transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity);
 			}
 		}
 	}
