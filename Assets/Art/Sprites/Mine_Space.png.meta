@@ -1,16 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 683878d2e4948d34ea6fbb253413d5f5
-timeCreated: 1432739792
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
-  mipmaps:
-    mipMapMode: 0
-    enableMipMap: 1
-=======
-guid: c8648113fd93d4e45bc161292b242288
 TextureImporter:
   fileIDToRecycleName:
     21300000: Mine_Space
@@ -18,7 +7,6 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
->>>>>>> f20df1114e4707a2242fcd528567bd440c4c08c8
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -33,32 +21,16 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
-<<<<<<< HEAD
-  cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
-  seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
-=======
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
->>>>>>> f20df1114e4707a2242fcd528567bd440c4c08c8
   textureSettings:
     filterMode: -1
     aniso: -1
     mipBias: -1
-<<<<<<< HEAD
-    wrapMode: 1
-  nPOTScale: 0
-  lightmap: 0
-  rGBM: 0
-=======
     wrapMode: -1
   nPOTScale: 0
   lightmap: 0
->>>>>>> f20df1114e4707a2242fcd528567bd440c4c08c8
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
@@ -74,8 +46,3 @@ TextureImporter:
     sprites: []
   spritePackingTag: 
   userData: 
-<<<<<<< HEAD
-  assetBundleName: 
-  assetBundleVariant: 
-=======
->>>>>>> f20df1114e4707a2242fcd528567bd440c4c08c8

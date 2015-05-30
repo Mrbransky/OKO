@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerFrontScript : MonoBehaviour {
 	public GameObject Parent;
+	public GameObject Spark;
 	// Use this for initialization
 	void Start () {
 		Parent = transform.parent.gameObject;
@@ -17,6 +18,7 @@ public class PlayerFrontScript : MonoBehaviour {
 		{
 			if(col.gameObject.tag == "FrontOfShip" && col.gameObject != gameObject)
 			{
+				Instantiate(Spark,col.transform.position,Quaternion.Euler(new Vector3(0,0,Random.Range(0,360))));
 				if (	col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce == Vector3.zero)
 					col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce = (Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount)/2;
 				else
@@ -47,7 +49,8 @@ public class PlayerFrontScript : MonoBehaviour {
 			                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 				
 			foreach (ContactPoint2D contact in col.contacts) {
-					//				Vector3 pos = contact.point;
+				Instantiate(Spark,col.transform.position,Quaternion.Euler(new Vector3(0,0,Random.Range(0,360))));
+				//				Vector3 pos = contact.point;
 					//				Instantiate(bHoleDamage,pos, Quaternion.identity);
 				col.gameObject.rigidbody2D.AddForceAtPosition((Vector2)col.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);
 			}
@@ -65,6 +68,7 @@ public class PlayerFrontScript : MonoBehaviour {
 			                                                                               +(Vector3)(Parent.rigidbody2D.velocity)/(2f/col.transform.parent.gameObject.GetComponent<PlayerScript>().DamageAmount))/2 /** Mathf.Pow(1.2f,DamageAmount)* rigidbody2D.mass*/;
 			
 			foreach (ContactPoint2D contact in col.contacts) {
+				Instantiate(Spark,col.transform.position,Quaternion.Euler(new Vector3(0,0,Random.Range(0,360))));
 				//				Vector3 pos = contact.point;
 				//				Instantiate(bHoleDamage,pos, Quaternion.identity);
 				col.transform.parent.gameObject.rigidbody2D.AddForceAtPosition((Vector2)col.transform.parent.gameObject.GetComponent<PlayerScript>().CollisionForce*25,contact.point);

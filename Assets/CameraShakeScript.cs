@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class CameraShakeScript : MonoBehaviour {
+	
 	Camera myCamera;
 	float shake = 0;
 	float decreaseShakeAmount = 1;
 	public float shakeAmount;
-
+	float timespeed = .1f;
 	// Use this for initialization
 	void Start () {
 		myCamera = gameObject.GetComponent<Camera>();
@@ -22,9 +23,20 @@ public class CameraShakeScript : MonoBehaviour {
 			pos.z = -10;
 			myCamera.transform.position = pos;
 			shake -=Time.deltaTime * decreaseShakeAmount;
+			Time.timeScale = .75f;
 		}
 		else
+		{
 			shake = 0;
+			if (Time.timeScale < 1 && Time.timeScale > 0)
+			{
+				Time.timeScale = Time.timeScale + timespeed;
+			}
+			if (Time.timeScale > 1)
+			{
+				Time.timeScale = 1;
+			}
+		}
 	}
 	public void Shake(float duration)
 	{

@@ -651,7 +651,8 @@ public class PlayerScript : MonoBehaviour {
         //explosion sound
         SM.explosionFunction();
         SM.KnockOutFunction();
-
+		myCamera.GetComponent<CameraShakeScript>().shakeAmount = 1.25f;
+		myCamera.GetComponent<CameraShakeScript>().Shake(.2f);
 		Instantiate(explosionPrefab,transform.position,new Quaternion(0,0,0,0));
 		Destroy (gameObject);
 	}
