@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerEnterKeyScript : MonoBehaviour {
@@ -12,7 +13,7 @@ public class PlayerEnterKeyScript : MonoBehaviour {
 	void Start () {
 		playerEnterController = GameObject.FindGameObjectWithTag("MainCamera");
 		JustSpawned = true;
-
+		GetComponentInChildren<Text>().text = myKey.ToString();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +40,7 @@ public class PlayerEnterKeyScript : MonoBehaviour {
 			{
 
 				playerEnterController.GetComponent<PlayerEnterScript>().RemoveKey(myKey);
+				playerEnterController.GetComponent<PlayerEnterScript>().PlayerEnterKeyObjects.Remove(gameObject);
 				Destroy(gameObject);
 			}
 		}
