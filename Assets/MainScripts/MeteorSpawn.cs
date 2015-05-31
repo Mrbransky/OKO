@@ -20,11 +20,12 @@ public class MeteorSpawn : MonoBehaviour {
 	int lastAmountOfPlayers = 0;
 	int amountOfPlayers = 0;
 	void Start () {
-
+		Time.timeScale = 1;
 		randNum = Random.Range (1, maxRandom);
 		timerCounter = timeSetter;
 		ObjectToSpawn = Meteor;
-		SuddenDeathTriggerTime = SuddenDeathTriggerTimePerPlayer * GlobalControlScript.GlobalControl.NumberOfPlayers;
+		if (GlobalControlScript.GlobalControl != null)
+			SuddenDeathTriggerTime = SuddenDeathTriggerTimePerPlayer * GlobalControlScript.GlobalControl.NumberOfPlayers;
 	}
 	
 
@@ -32,31 +33,35 @@ public class MeteorSpawn : MonoBehaviour {
 	{
 		lastAmountOfPlayers = amountOfPlayers;
 		amountOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
-
-		if (amountOfPlayers < lastAmountOfPlayers)
+		if(SuddenDeathTriggerTimePerPlayer > 0)
 		{
-			SuddenDeathTriggerTime = ElapsedGameTime +(SuddenDeathTriggerTimePerPlayer * amountOfPlayers);
-		}
+			if (amountOfPlayers < lastAmountOfPlayers)
+			{
+				SuddenDeathTriggerTime = ElapsedGameTime +(SuddenDeathTriggerTimePerPlayer * amountOfPlayers);
+			}
 
-		timerCounter -= Time.deltaTime;
-		if(ElapsedGameTime < SuddenDeathTriggerTime)
-		{
-		ElapsedGameTime += Time.deltaTime;
+			timerCounter -= Time.deltaTime;
+			if(ElapsedGameTime < SuddenDeathTriggerTime)
+			{
+			ElapsedGameTime += Time.deltaTime;
+			}
+			else if(ElapsedGameTime >= SuddenDeathTriggerTime)
+			{
+				//Sudden Death
+				//Debug.Log ("Sudden Death Started");
+				ObjectToSpawn = ExplosiveMine;
+				timeSetter = 2;
+				maxRandom = 3;
+			}
 		}
-		else if(ElapsedGameTime >= SuddenDeathTriggerTime)
-		{
-			//Sudden Death
-			//Debug.Log ("Sudden Death Started");
-			ObjectToSpawn = ExplosiveMine;
-			timeSetter = 2;
-			maxRandom = 3;
-		}
-
 		//Attempts to spawn meteor every seven seconds
-		if(timerCounter <= 0 && control.GetComponent<Control>().startGame)
+		if (control != null)
 		{
-			SpawnMeteor();
-			timerCounter = timeSetter;
+			if(timerCounter <= 0 && control.GetComponent<Control>().startGame)
+			{
+				SpawnMeteor();
+				timerCounter = timeSetter;
+			}
 		}
 
 	}
