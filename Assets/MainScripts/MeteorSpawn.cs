@@ -68,7 +68,7 @@ public class MeteorSpawn : MonoBehaviour {
 			Vector2 spawnerPosition = (this.transform.position);
 			GameObject temp = (GameObject) Instantiate(ObjectToSpawn, spawnerPosition, Quaternion.identity);
 			float rand = Random.Range(50,150);
-			temp.rigidbody2D.AddTorque(rand);
+			temp.GetComponent<Rigidbody2D>().AddTorque(rand);
 			//resets number to a new random number
 			randNum = Random.Range (1, maxRandom);
 		}

@@ -33,7 +33,7 @@ public class GamepadSelector : MonoBehaviour {
 		GamepadState state = GamePad.GetState(controller);
 		if (state.A) {
 
-			p1.renderer.enabled = true;
+			p1.GetComponent<Renderer>().enabled = true;
 
 			}
 		}
@@ -42,7 +42,7 @@ public class GamepadSelector : MonoBehaviour {
 		GamepadState state = GamePad.GetState(controller);
 		if (state.A) {
 			
-			p2.renderer.enabled = true;
+			p2.GetComponent<Renderer>().enabled = true;
 			
 		}
 	}

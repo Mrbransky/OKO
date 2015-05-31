@@ -24,12 +24,12 @@ public class soundManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		audioManagerSource = (AudioSource)gameObject.AddComponent ("AudioSource");
-		explosionSource = (AudioSource)gameObject.AddComponent ("AudioSource");
-		announcerSource = (AudioSource)gameObject.AddComponent ("AudioSource");
-		thrusterSource = (AudioSource)gameObject.AddComponent ("AudioSource");
-		musicSource = (AudioSource)gameObject.AddComponent ("AudioSource");
-		ambianceSource = (AudioSource)gameObject.AddComponent ("AudioSource");
+		audioManagerSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+		explosionSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+		announcerSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+		thrusterSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+		musicSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+		ambianceSource = (AudioSource)gameObject.AddComponent <AudioSource>();
 	}
 	
 	// Update is called once per frame

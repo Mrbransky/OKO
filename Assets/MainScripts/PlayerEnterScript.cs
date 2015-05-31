@@ -17,8 +17,8 @@ public class PlayerEnterScript : MonoBehaviour {
 		}
 		else{
 			GameObject globalcontrol = new GameObject();
-			globalcontrol.AddComponent("GlobalControlScript");
-			globalcontrol.AddComponent("soundManager");
+			globalcontrol.AddComponent<GlobalControlScript>();
+			globalcontrol.AddComponent<soundManager>();
 			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}

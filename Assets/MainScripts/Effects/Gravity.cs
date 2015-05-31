@@ -40,7 +40,7 @@ public class Gravity : MonoBehaviour {
 			movement.y = dir.y + Mathf.Sin(currentAngle * Mathf.Deg2Rad)*2;	
 			
 			//test on y
-			if (rigidbody2D.velocity.y > .75f || rigidbody2D.velocity.y < -.75f )
+			if (GetComponent<Rigidbody2D>().velocity.y > .75f || GetComponent<Rigidbody2D>().velocity.y < -.75f )
 			{
 				movement.x = dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
 				movement.y = dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
@@ -52,7 +52,7 @@ public class Gravity : MonoBehaviour {
 			}
 			
 			//test on x
-			if (rigidbody2D.velocity.x > .75f || rigidbody2D.velocity.x < -.75f)
+			if (GetComponent<Rigidbody2D>().velocity.x > .75f || GetComponent<Rigidbody2D>().velocity.x < -.75f)
 			{
 				movement.x += dir.x + Mathf.Cos(currentAngle+90 * Mathf.Deg2Rad)*2;
 				movement.y += dir.y + Mathf.Sin(currentAngle+90 * Mathf.Deg2Rad)*2;					
@@ -73,8 +73,8 @@ public class Gravity : MonoBehaviour {
 			//				//orbit controls
 			//Debug.Log(gameObject.name + " " + dir);
 			Debug.DrawLine(transform.position,(transform.position + movement));
-			Debug.DrawLine(transform.position,(transform.position + (Vector3)rigidbody2D.velocity));
-			rigidbody2D.AddForce(-(movement.normalized) * force * rigidbody2D.mass);
+			Debug.DrawLine(transform.position,(transform.position + (Vector3)GetComponent<Rigidbody2D>().velocity));
+			GetComponent<Rigidbody2D>().AddForce(-(movement.normalized) * force * GetComponent<Rigidbody2D>().mass);
 		}
 	}
 }
