@@ -83,6 +83,7 @@ public class PlayerScript : MonoBehaviour {
         //SoundManager
         SM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<soundManager>();
 		EngineBoost.SetActive(true);
+		SM.ThrusterFunction(false);
 	}
 	
 
