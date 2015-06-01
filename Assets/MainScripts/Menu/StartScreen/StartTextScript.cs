@@ -10,7 +10,7 @@ public class StartTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Time.timeScale = 1;
-		transform.position = new Vector3(Screen.width/2,Screen.height/6);
+		transform.position = new Vector3(Screen.width/2,Screen.height/7.5f);
 	}
 	
 	// Update is called once per frame
