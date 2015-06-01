@@ -28,7 +28,7 @@ public class Control : MonoBehaviour {
 	void Start () {
 
         //SoundManager
-        SM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<soundManager>();
+        SM = GameObject.Find("GlobalControl").GetComponent<soundManager>();
 		//SM.musicFunction (true);
 
 		colors[0] = new Color32((byte)204,(byte)51,(byte)63,(byte)250);
