@@ -21,7 +21,13 @@ public class soundManager : MonoBehaviour {
 	public AudioClip thrusterSound;
 
 	public AudioClip musicClip;
-	
+
+	private bool musicGate = true;
+
+	void Awake(){
+		DontDestroyOnLoad(transform.gameObject);
+	}
+
 	// Use this for initialization
 	void Start () {
 		audioManagerSource = (AudioSource)gameObject.AddComponent <AudioSource>();
@@ -35,6 +41,19 @@ public class soundManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//testVoid ();
+
+		//musicFunction ();
+
+		if (gameObject.name == "SoundManager" && Application.loadedLevel == 2 && musicGate == true) {
+			audioManagerSource.clip = musicClip;
+			audioManagerSource.Play ();
+			audioManagerSource.volume = 0.5f;
+			audioManagerSource.loop = true;
+			musicGate = false;
+		}
+		if (Application.loadedLevel != 2) {
+			audioManagerSource.Stop();
+		}
 	}
 
 	public void explosionFunction(){
@@ -61,8 +80,13 @@ public class soundManager : MonoBehaviour {
 		}
 	}
 	
-	public void musicFunction(bool isMusic = false){
-		if (isMusic == true) {
+	public void musicFunction(/*bool isMusic = false*/){
+		if (gameObject.name == "SoundManager" && Application.loadedLevel == 2) {
+
+		} else {
+			musicGate = false;
+		}
+		if (musicGate == true) {
 			musicSource.clip = musicClip;
 			musicSource.Play ();
 			musicSource.loop = true;
@@ -132,7 +156,7 @@ public class soundManager : MonoBehaviour {
 			announcerSource.PlayOneShot(announcerSource.clip, 2.0F);
 	}
 
-	public void testVoid(){
+	/*public void testVoid(){
 
 		//Ship Explosion/"Knockout!"
 		if (Input.GetKeyDown ("h")) {
@@ -171,5 +195,5 @@ public class soundManager : MonoBehaviour {
 		if (Input.GetKeyDown ("x")) {
 			musicFunction(false);
 		}
-	}
+	}*/
 }
