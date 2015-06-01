@@ -46,16 +46,18 @@ public class soundManager : MonoBehaviour {
 
 		//musicFunction ();
 
-		if (gameObject.name == "SoundManager" && Application.loadedLevel == 2 && musicGate == true) {
+		if (gameObject.name == "SoundManager(Clone)" /*&& Application.loadedLevel == 2*/ && musicGate == true) {
 			audioManagerSource.clip = musicClip;
 			audioManagerSource.Play ();
 			audioManagerSource.volume = 0.5f;
 			audioManagerSource.loop = true;
 			musicGate = false;
+			Debug.Log ("PlayingMusic");
 		}
 		if (Application.loadedLevel != 2) {
-			audioManagerSource.Stop();
+			//audioManagerSource.Stop();
 		}
+
 	}
 
 	public void explosionFunction(){
@@ -84,6 +86,7 @@ public class soundManager : MonoBehaviour {
 	
 	public void musicFunction(/*bool isMusic = false*/){
 		if (gameObject.name == "SoundManager" && Application.loadedLevel == 2) {
+
 
 		} else {
 			musicGate = false;
