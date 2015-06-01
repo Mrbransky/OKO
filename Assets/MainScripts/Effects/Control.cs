@@ -28,7 +28,7 @@ public class Control : MonoBehaviour {
 	void Start () {
 
         //SoundManager
-        SM = GameObject.Find("GlobalControl").GetComponent<soundManager>();
+		SM = GameObject.Find("GlobalControl").GetComponentInChildren<soundManager>();
 		//SM.musicFunction (true);
 
 		colors[0] = new Color32((byte)204,(byte)51,(byte)63,(byte)250);
@@ -172,11 +172,11 @@ public class Control : MonoBehaviour {
 			//}
 			if (gameEnd == true) {
 				
-				if (state.B || Input.GetKey(KeyCode.B)) {
-					Application.LoadLevel (0);
+				if (state.B || Input.GetKey(KeyCode.Backspace)) {
+					Application.LoadLevel (1);
 					Time.timeScale = 1;
 				}
-				if (state.Y || Input.GetKey(KeyCode.Y)) {
+				if (state.Y || Input.GetKey(KeyCode.Return)) {
 					Time.timeScale = 1;
 					Application.LoadLevel (2);
 				}
@@ -218,8 +218,8 @@ public class Control : MonoBehaviour {
 		if (gameEnd == true) {
 			
 			GUI.Label(new Rect(Screen.width/2,0,200,200),targets[0].name + " wins!");
-			GUI.Label(new Rect(Screen.width/2,50,500,200),"Press B to go back");
-			GUI.Label(new Rect(Screen.width/2,100,500,200),"Press Y to restart");
+			GUI.Label(new Rect(Screen.width/2,50,500,200),"Press Backspace to go back");
+			GUI.Label(new Rect(Screen.width/2,100,500,200),"Press Enter to replay");
 		}
 		else
 		{

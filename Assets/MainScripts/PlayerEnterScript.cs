@@ -15,6 +15,7 @@ public class PlayerEnterScript : MonoBehaviour {
 	public GameObject RemoveKeyText;
 	public GameObject InstructionsText;
 	public GameObject StartButton;
+	public GameObject SM;
 	// Use this for initialization
 	void Start () {
 		//MaxPlayers--;
@@ -26,7 +27,8 @@ public class PlayerEnterScript : MonoBehaviour {
 		else{
 			GameObject globalcontrol = new GameObject();
 			globalcontrol.AddComponent<GlobalControlScript>();
-			globalcontrol.AddComponent<soundManager>();
+			GameObject sm = (GameObject)Instantiate(SM);
+			sm.transform.SetParent(globalcontrol.transform);
 			globalcontrol.name = "GlobalControl";
 			GlobalControl = globalcontrol;
 		}

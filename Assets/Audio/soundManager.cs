@@ -25,7 +25,7 @@ public class soundManager : MonoBehaviour {
 	private bool musicGate = true;
 
 	void Awake(){
-		DontDestroyOnLoad(transform.gameObject);
+		//DontDestroyOnLoad(transform.gameObject);
 	}
 
 	// Use this for initialization
@@ -36,6 +36,8 @@ public class soundManager : MonoBehaviour {
 		thrusterSource = (AudioSource)gameObject.AddComponent <AudioSource>();
 		musicSource = (AudioSource)gameObject.AddComponent <AudioSource>();
 		ambianceSource = (AudioSource)gameObject.AddComponent <AudioSource>();
+
+		thrusterSource.playOnAwake = false;
 	}
 	
 	// Update is called once per frame

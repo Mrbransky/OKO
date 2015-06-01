@@ -81,7 +81,7 @@ public class PlayerScript : MonoBehaviour {
 			Debug.LogError("NO 'Main Camera' FOUND!");
 
         //SoundManager
-        SM = GameObject.Find("GlobalControl").GetComponent<soundManager>();
+        SM = GameObject.Find("GlobalControl").GetComponentInChildren<soundManager>();
 		EngineBoost.SetActive(true);
 		SM.ThrusterFunction(false);
 	}
@@ -651,6 +651,7 @@ public class PlayerScript : MonoBehaviour {
 	{
         //explosion sound
         SM.explosionFunction();
+		SM.ThrusterFunction(false);
         SM.KnockOutFunction();
 		myCamera.GetComponent<CameraShakeScript>().shakeAmount = 1.25f;
 		myCamera.GetComponent<CameraShakeScript>().Shake(.2f);
