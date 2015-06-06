@@ -77,6 +77,11 @@ public class PlayerEnterScript : MonoBehaviour {
 						add = false;
 						break;
 					}
+					if (key == KeyCode.Return || key == KeyCode.Backspace)
+					{
+						add = false;
+						break;
+					}
 				}
 				if (add)
 				{

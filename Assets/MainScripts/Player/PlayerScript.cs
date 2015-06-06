@@ -52,6 +52,7 @@ public class PlayerScript : MonoBehaviour {
 	bool flipping = false;
 	Vector3 velocityToFlip = Vector3.zero;
 	public Vector3 CollisionForce =Vector3.zero;
+	public GameObject MineShooter;
 	List<GameObject> ignoreCollisionList = new List<GameObject>();
 
     private soundManager SM;
@@ -201,6 +202,7 @@ public class PlayerScript : MonoBehaviour {
 //					rigidbody2D.AddForce(-Vector2.up*curSpeed);
 //			}
 
+			//When Pressing the MyKey, boost or Flip if double tap.
 			if(Input.GetKeyDown(MyKey))
 			{
 				durationBetweenPresses = Time.time - buttonPressedLastTime;
@@ -208,6 +210,22 @@ public class PlayerScript : MonoBehaviour {
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
 				//EngineBoost.SetActive(true);
 				EngineBoost.GetComponent<Animator>().SetBool("ButtonPressed",true);
+
+				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .4f && durationBetweenPresses <= .35f)
+				{
+					facingForward = !facingForward;
+					//rigidbody2D.velocity = -rigidbody2D.velocity;
+					flipping = true;
+					velocityToFlip = GetComponent<Rigidbody2D>().velocity;
+					lastButtonPressedDuration = 100;
+					buttonPressedDuration = 0;
+				}
+				else{
+					lastButtonPressedDuration = 100;
+					buttonPressedDuration = 0;
+				}
+
+
 
                 //sound for thrusters
                 SM.ThrusterFunction(true);
@@ -221,19 +239,8 @@ public class PlayerScript : MonoBehaviour {
 			{
 				EngineBoost.GetComponent<Animator>().SetBool("ButtonPressed",false);
 				//EngineBoost.SetActive(false);
-				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .5f && durationBetweenPresses <= .75f)
-				{
-					facingForward = !facingForward;
-					//rigidbody2D.velocity = -rigidbody2D.velocity;
-					flipping = true;
-					velocityToFlip = GetComponent<Rigidbody2D>().velocity;
-					lastButtonPressedDuration = 100;
-					buttonPressedDuration = 0;
-				}
-				else{
-					lastButtonPressedDuration = buttonPressedDuration;
-					buttonPressedDuration = 0;
-				}
+				lastButtonPressedDuration = buttonPressedDuration;
+				buttonPressedDuration = 0;
 
                 //stops thruster sound
                 SM.ThrusterFunction(false);
@@ -283,7 +290,7 @@ public class PlayerScript : MonoBehaviour {
 //			}
 		}
 
-		//rigidbody2D.velocity = movement;
+		//pulls the player around the suns
 		if (gravControl == true) {
 			foreach (GameObject bHole in bHoles)
 			{
@@ -656,6 +663,8 @@ public class PlayerScript : MonoBehaviour {
 		myCamera.GetComponent<CameraShakeScript>().shakeAmount = 1.25f;
 		myCamera.GetComponent<CameraShakeScript>().Shake(.2f);
 		Instantiate(explosionPrefab,transform.position,new Quaternion(0,0,0,0));
+		GameObject shooter = (GameObject)Instantiate(MineShooter);
+		shooter.GetComponent<MineShooterScript>().MyKey = MyKey;
 		Destroy (gameObject);
 	}
 }
