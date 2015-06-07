@@ -68,16 +68,11 @@ public class PlayerEnterScript : MonoBehaviour {
 		{
 			KeyCode keyCode = FetchKey();
 			bool add = true;
-			if (keyCode != KeyCode.None)
+			if (keyCode != KeyCode.None && keyCode != KeyCode.Return && keyCode != KeyCode.Backspace)
 			{
 				foreach (KeyCode key in keysUsed)
 				{
 					if (key == keyCode)
-					{
-						add = false;
-						break;
-					}
-					if (key == KeyCode.Return || key == KeyCode.Backspace)
 					{
 						add = false;
 						break;

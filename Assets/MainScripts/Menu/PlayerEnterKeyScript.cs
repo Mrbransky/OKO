@@ -14,10 +14,12 @@ public class PlayerEnterKeyScript : MonoBehaviour {
 		playerEnterController = GameObject.FindGameObjectWithTag("MainCamera");
 		JustSpawned = true;
 		GetComponentInChildren<Text>().text = myKey.ToString();
+		transform.localScale = new Vector3((Screen.currentResolution.width/1600),(Screen.currentResolution.width/1200),1);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.GetKeyDown(myKey))
 		{
 			if (JustSpawned)

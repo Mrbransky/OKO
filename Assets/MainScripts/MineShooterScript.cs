@@ -20,13 +20,18 @@ public class MineShooterScript : MonoBehaviour {
 	float shotWaitTime = 0;
 	public float ShotRechargeTime = 0;
 	public GameObject Projectile;
-	public float ShotForce;
+	public float DefaultShotForce;
+	public float MaxShotForce;
+	float shotForce;
+	public float ChargeAmount;
 	GameObject camera;
 	private Vector3 curLoc;
 	private Vector3 prevLoc;
 	bool shot = false;
 	bool inPosition = false;
 	bool stop = false;
+	bool doubletapped = false;
+
 	// Use this for initialization
 	void Start () {
 		camera = GameObject.Find("Main Camera");
@@ -37,6 +42,7 @@ public class MineShooterScript : MonoBehaviour {
 		Vector3 vectorToTarget =  -transform.position;
 		float angle = Mathf.Atan2(vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
+		shotForce=DefaultShotForce;
 	}
 	
 	// Update is called once per frame
@@ -45,39 +51,27 @@ public class MineShooterScript : MonoBehaviour {
 		if (inPosition)
 		{
 			Vector3 Pos = new Vector3(0,0,0);
-	//		Pos.x = Mathf.Sin(counter * CircleSpeed + startingPos) * circleSize;
-	//		Pos.y  = Mathf.Cos(counter * CircleSpeed + startingPos) * circleSize;
-	//		Pos.z  += forwardSpeed * Time.deltaTime;
-	//		transform.position = Pos;
-	//		
-	//		Vector3 moveDirection = gameObject.transform.position - prevLoc;
-	//		if (moveDirection != Vector3.zero)
-	//		{
-	//			lastAngle = angle;
-	//			angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg + 90;
-	//			if (angle < 2 + lastAngle || angle > lastAngle - 2 )
-	//				transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-	//			else
-	//				transform.rotation = Quaternion.AngleAxis(lastAngle, Vector3.forward);
-	//		}
+
 			transform.RotateAround (Pos, Vector3.forward, CircleSpeed * Time.deltaTime);
-			if (Time.time >= shotWaitTime + .36f && shot)
+
+			if (Time.time >= shotWaitTime + .26f && shot)
 			{
 				//shoot mine
 				print("Shoot");
 				GameObject tempMine = (GameObject)Instantiate(Projectile,transform.position,transform.rotation);
-				tempMine.GetComponent<Rigidbody2D>().velocity = -transform.position.normalized * ShotForce;
+				tempMine.GetComponent<Rigidbody2D>().velocity = -transform.position.normalized * shotForce;
 				shot = false;
+				shotForce=DefaultShotForce;
 			}
+
 			if(Input.GetKeyDown(MyKey))
 			{
-				shotWaitTime = Time.time;
-				shot = true;
+
 				durationBetweenPresses = Time.time - buttonPressedLastTime;
 				buttonPressedLastTime = Time.time;
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
 
-				if (lastButtonPressedDuration <= .5f && durationBetweenPresses <= .35f)
+				if (lastButtonPressedDuration <= .25f && durationBetweenPresses <= .25f)
 				{
 					shot = false;
 					//change direction	
@@ -85,13 +79,13 @@ public class MineShooterScript : MonoBehaviour {
 					CircleSpeed = -CircleSpeed;
 					lastButtonPressedDuration = 100;
 					buttonPressedDuration = 0;
-
+					doubletapped = true;
 				}
 				else
 				{
 					lastButtonPressedDuration = 100;
 					buttonPressedDuration = 0;
-
+					doubletapped = false;
 
 				}
 
@@ -99,16 +93,25 @@ public class MineShooterScript : MonoBehaviour {
 			if(Input.GetKey(MyKey))
 			{
 				buttonPressedDuration = Time.time - buttonPressedLastTime;
+				if (shotForce < MaxShotForce)
+					shotForce += ChargeAmount;
+				else
+					shotForce = MaxShotForce;
 			}
 			if (Input.GetKeyUp(MyKey))
 			{
-					lastButtonPressedDuration = buttonPressedDuration;
-					buttonPressedDuration = 0;
-			}
-			counter += .01f;
-			if (counter > 360)
-			{
-				counter -= 360;
+
+				lastButtonPressedDuration = buttonPressedDuration;
+				buttonPressedDuration = 0;
+			
+				if (lastButtonPressedDuration > .25f)
+					shotWaitTime = 0;
+				else
+					shotWaitTime = Time.time;
+
+
+				if (!doubletapped)
+					shot = true;
 			}
 		}
 		else
@@ -117,7 +120,7 @@ public class MineShooterScript : MonoBehaviour {
 			{
 				if (GetComponent<Rigidbody2D>().velocity.magnitude > 0)
 					GetComponent<Rigidbody2D>().AddForce(new Vector2(-transform.up.normalized.x * 75,-transform.up.normalized.y * 75));
-				if (GetComponent<Rigidbody2D>().velocity.magnitude <= 1.5f)
+				if (GetComponent<Rigidbody2D>().velocity.magnitude <= 40)
 				{
 					GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 					inPosition = true;
@@ -138,5 +141,20 @@ public class MineShooterScript : MonoBehaviour {
 	{
 		if (otherObj.tag == "Bounds")
 			stop = true;
+	}
+	void OnGUI()
+	{
+		// Find the 2D position of the object using the main camera
+		Vector2 boxPosition = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+		
+		// "Flip" it into screen coordinates
+		boxPosition.y = Screen.height - boxPosition.y;
+		GUIStyle TextStyle = new GUIStyle();
+		TextStyle.normal.textColor = Color.black;
+		// Center the label over the coordinates
+		boxPosition.x -= 10 * 0.5f;
+		boxPosition.y -= 75 * 0.5f;
+		//if (!startboosted)
+		GUI.Label (new Rect (boxPosition.x, boxPosition.y, 200, 200), MyKey.ToString(), TextStyle);
 	}
 }

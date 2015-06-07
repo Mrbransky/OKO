@@ -18,7 +18,6 @@ public class GlobalControlScript : MonoBehaviour {
 	public bool NoGrowth = false;
 	public bool SuddenDeath = false;
 
-
 	void Awake () {
 		if(!GlobalControl) {
 			GlobalControl = this;
@@ -31,9 +30,5 @@ public class GlobalControlScript : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

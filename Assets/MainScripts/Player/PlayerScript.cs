@@ -50,6 +50,8 @@ public class PlayerScript : MonoBehaviour {
 	float lastButtonPressedDuration = 100;
 	float durationBetweenPresses = 0;
 	bool flipping = false;
+	bool doubleTapped = false;
+	float doubleTappedTime =0;
 	Vector3 velocityToFlip = Vector3.zero;
 	public Vector3 CollisionForce =Vector3.zero;
 	public GameObject MineShooter;
@@ -201,7 +203,11 @@ public class PlayerScript : MonoBehaviour {
 //			{
 //					rigidbody2D.AddForce(-Vector2.up*curSpeed);
 //			}
-
+			if (doubleTapped)
+			{
+				if (Time.time >= doubleTappedTime + .35f)
+					doubleTapped = false;
+			}
 			//When Pressing the MyKey, boost or Flip if double tap.
 			if(Input.GetKeyDown(MyKey))
 			{
@@ -211,7 +217,7 @@ public class PlayerScript : MonoBehaviour {
 				//EngineBoost.SetActive(true);
 				EngineBoost.GetComponent<Animator>().SetBool("ButtonPressed",true);
 
-				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .4f && durationBetweenPresses <= .35f)
+				if (lastButtonPressedDuration <= .5f && buttonPressedDuration <= .4f && durationBetweenPresses <= .35f && !doubleTapped)
 				{
 					facingForward = !facingForward;
 					//rigidbody2D.velocity = -rigidbody2D.velocity;
@@ -219,6 +225,8 @@ public class PlayerScript : MonoBehaviour {
 					velocityToFlip = GetComponent<Rigidbody2D>().velocity;
 					lastButtonPressedDuration = 100;
 					buttonPressedDuration = 0;
+					doubleTapped = true;
+					doubleTappedTime = Time.time;
 				}
 				else{
 					lastButtonPressedDuration = 100;
@@ -525,6 +533,21 @@ public class PlayerScript : MonoBehaviour {
 				                                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount))/2;
 			
 			GetComponent<Rigidbody2D>().AddForce((Vector2)CollisionForce*1500);
+			
+			DamageAmount=DamageAmount*1.05f;  
+			
+		}
+		if(col.gameObject.tag == "PlayerMineExplosion")
+		{
+			//print("Called");
+			if (CollisionForce == Vector3.zero)
+				CollisionForce = ((transform.position - col.transform.position).normalized * 
+				                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount)/2;
+			else
+				CollisionForce = (CollisionForce+((transform.position - col.transform.position).normalized * 
+				                                  (100/(1+(transform.position - col.transform.position).magnitude)))/(2f/DamageAmount))/2;
+			
+			GetComponent<Rigidbody2D>().AddForce((Vector2)CollisionForce*600);
 			
 			DamageAmount=DamageAmount*1.05f;  
 			
