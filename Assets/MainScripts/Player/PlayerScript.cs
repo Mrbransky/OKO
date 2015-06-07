@@ -685,7 +685,20 @@ public class PlayerScript : MonoBehaviour {
         SM.KnockOutFunction();
 		myCamera.GetComponent<CameraShakeScript>().shakeAmount = 1.25f;
 		myCamera.GetComponent<CameraShakeScript>().Shake(.2f);
-		Instantiate(explosionPrefab,transform.position,new Quaternion(0,0,0,0));
+
+		float angle = Vector3.Angle((-transform.position).normalized,Vector3.up);
+		if (transform.position.x < 0)
+		{
+			angle = -(angle+180);
+		}
+		else
+		{
+			angle = (angle+180);
+		}
+		Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
+		rot = Quaternion.Euler(0, 0, rot.eulerAngles.z);
+
+		Instantiate(explosionPrefab,transform.position,rot);
 		GameObject shooter = (GameObject)Instantiate(MineShooter);
 		shooter.GetComponent<MineShooterScript>().MyKey = MyKey;
 		Destroy (gameObject);
