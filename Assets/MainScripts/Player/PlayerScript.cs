@@ -701,6 +701,7 @@ public class PlayerScript : MonoBehaviour {
 		Instantiate(explosionPrefab,transform.position,rot);
 		GameObject shooter = (GameObject)Instantiate(MineShooter);
 		shooter.GetComponent<MineShooterScript>().MyKey = MyKey;
+		shooter.GetComponent<MineShooterScript>().myColor = GetComponent<SpriteRenderer>().color;
 		Destroy (gameObject);
 	}
 }

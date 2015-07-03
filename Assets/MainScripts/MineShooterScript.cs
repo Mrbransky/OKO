@@ -7,7 +7,7 @@ public class MineShooterScript : MonoBehaviour {
 	public KeyCode MyKey;					//the key that controls the shooter
 	float startingPos;						//the starting position of the shooter randomly placed in a circle around the arena
 	float angle = 0;						//the angle of the shooter in relation to the center of the arena
-
+	public Color myColor;
 	float buttonPressedLastTime = 0;		//Time the button was pressed last
 	float buttonPressedDuration = 0;		//the duration the button was held down for
 	float lastButtonPressedDuration = 100;	//the duration the button was held down for Last
@@ -26,6 +26,7 @@ public class MineShooterScript : MonoBehaviour {
 	bool stop = false;						//if true, stops the shooter from moving towards the center of the arena and prepares to lock it into place
 	bool doubletapped = false;				//if true, the button press is a double tap, not a shot
 	bool recharged = false;					//if true, the shooter is recharged and can be fired again
+	public Sprite[] sprites = new Sprite[7];
 
 	// Use this for initialization
 	void Start () {
@@ -38,8 +39,17 @@ public class MineShooterScript : MonoBehaviour {
 		float angle = Mathf.Atan2(vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
 		shotForce=DefaultShotForce;
+		shotRechargeTime = Time.time;
+		GetComponent<SpriteRenderer>().sprite = sprites[0];
 	}
-	
+	public float RechargeTime()
+	{
+		return (Time.time - shotRechargeTime);
+	}
+	public float ShotForce()
+	{
+		return shotForce;
+	}
 	// Update is called once per frame
 	void Update () {
 
@@ -60,11 +70,13 @@ public class MineShooterScript : MonoBehaviour {
 					shot = false;
 					shotForce=DefaultShotForce;
 					shotRechargeTime = Time.time;
+					GetComponent<SpriteRenderer>().sprite = sprites[0];
 				}
 			}
 			if (Time.time <= shotRechargeTime + ShotRechargeDuration)
 			{
 				recharged = false;
+
 			}
 			else{
 				recharged = true;
@@ -112,6 +124,26 @@ public class MineShooterScript : MonoBehaviour {
 						shotForce += ChargeAmount;
 					else
 						shotForce = MaxShotForce;
+
+					if(shotForce >= MaxShotForce){
+						GetComponent<SpriteRenderer>().sprite = sprites[6];
+					}
+					else
+					{
+						for(int i = 1; i < 8; i++)
+						{
+							if(shotForce <= i * MaxShotForce /7){
+								GetComponent<SpriteRenderer>().sprite = sprites[i-1];
+								break;
+							}
+							else if (i==7)
+							{
+								if(shotForce >= MaxShotForce){
+									GetComponent<SpriteRenderer>().sprite = sprites[i-1];
+								}
+							}
+						}
+					}
 				}
 			}
 			if (Input.GetKeyUp(MyKey))
@@ -126,20 +158,23 @@ public class MineShooterScript : MonoBehaviour {
 					shotWaitTime = Time.time;
 
 
-				if (!doubletapped)
+				if (!doubletapped && recharged)
 					shot = true;
 			}
 		}
 		else
 		{
+			shotRechargeTime = Time.time;
 			if (stop)
 			{
-				if (GetComponent<Rigidbody2D>().velocity.magnitude > 0)
-					GetComponent<Rigidbody2D>().AddForce(new Vector2(-transform.up.normalized.x * 75,-transform.up.normalized.y * 75));
-				if (GetComponent<Rigidbody2D>().velocity.magnitude <= 40)
+				if (GetComponentInChildren<ShooterHardStopScript>().Stop)
 				{
 					GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 					inPosition = true;
+				}
+				else if (GetComponent<Rigidbody2D>().velocity.magnitude > 0)
+				{
+					GetComponent<Rigidbody2D>().AddForce(new Vector2(-transform.up.normalized.x * circleSize/5f,-transform.up.normalized.y * circleSize/5f));
 				}
 			}
 			else
@@ -147,9 +182,11 @@ public class MineShooterScript : MonoBehaviour {
 				//print(GetComponent<Rigidbody2D>().velocity.magnitude);
 
 				if (GetComponent<Rigidbody2D>().velocity.magnitude < 100)
-					GetComponent<Rigidbody2D>().velocity = new Vector2(transform.up.normalized.x * 100,transform.up.normalized.y * 100);
+					GetComponent<Rigidbody2D>().velocity = new Vector2(transform.up.normalized.x * 200,
+					                                                   transform.up.normalized.y * 200);
 
 				print(GetComponent<Rigidbody2D>().velocity);
+
 			}
 		}
 	}

@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 288ddcaab31a60b488c50950cc7ca79b
+timeCreated: 1435542208
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpiralCharge_Usable432_0
+    21300002: SpiralCharge_Usable432_1
+    21300004: SpiralCharge_Usable432_2
+    21300006: SpiralCharge_Usable432_3
+    21300008: SpiralCharge_Usable432_4
+    21300010: SpiralCharge_Usable432_5
+    21300012: SpiralCharge_Usable432_6
+    21300014: SpiralCharge_Usable432_7
+    21300016: SpiralCharge_Usable432_8
+    21300018: SpiralCharge_Usable432_9
+    21300020: SpiralCharge_Usable432_10
+    21300022: SpiralCharge_Usable432_11
+    21300024: SpiralCharge_Usable432_12
+    21300026: SpiralCharge_Usable432_13
+    21300028: SpiralCharge_Usable432_14
+    21300030: SpiralCharge_Usable432_15
+    21300032: SpiralCharge_Usable432_16
+    21300034: SpiralCharge_Usable432_17
+    21300036: SpiralCharge_Usable432_18
+    21300038: SpiralCharge_Usable432_19
+    21300040: SpiralCharge_Usable432_20
+    21300042: SpiralCharge_Usable432_21
+    21300044: SpiralCharge_Usable432_22
+    21300046: SpiralCharge_Usable432_23
+    21300048: SpiralCharge_Usable432_24
+    21300050: SpiralCharge_Usable432_25
+    21300052: SpiralCharge_Usable432_26
+    21300054: SpiralCharge_Usable432_27
+    21300056: SpiralCharge_Usable432_28
+    21300058: SpiralCharge_Usable432_29
+    21300060: SpiralCharge_Usable432_30
+    21300062: SpiralCharge_Usable432_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpiralCharge_Usable432_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_3
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_4
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_5
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_6
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_7
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_8
+      rect:
+        serializedVersion: 2
+        x: 3424
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_9
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_10
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_11
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_12
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_13
+      rect:
+        serializedVersion: 2
+        x: 5564
+        y: 858
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_15
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_16
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_17
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_18
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_19
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_20
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_21
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_22
+      rect:
+        serializedVersion: 2
+        x: 3424
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_24
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_25
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_26
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_27
+      rect:
+        serializedVersion: 2
+        x: 5564
+        y: 430
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_29
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 2
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_30
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpiralCharge_Usable432_31
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2
+        width: 428
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
