@@ -36,6 +36,7 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject shield;
 	public GameObject control;
 	public GameObject explosionPrefab;
+	public GameObject SunFlareExplosionPrefab;
 	public float AtmosphereDamage;
 	//public Vector3 axis = Vector3.up;
 	//public Vector3 desiredPosition;
@@ -559,7 +560,8 @@ public class PlayerScript : MonoBehaviour {
 //				Vector3 pos = contact.point;
 //				Instantiate(bHoleDamage,pos, Quaternion.identity);
 //			}
-			DestroySelf();
+
+			DestroySelf(SunFlareExplosionPrefab);
          	Debug.Log("End Game");
     
 
@@ -670,14 +672,14 @@ public class PlayerScript : MonoBehaviour {
 	{
 		if (col.tag == "Bounds")
 		{
-			DestroySelf();
+			DestroySelf(explosionPrefab);
 		}
 		if (col.tag == "Atmosphere")
 		{
 			AtmosphereEffect.SetActive(false);
 		}
 	}
-	void DestroySelf()
+	void DestroySelf(GameObject explosion)
 	{
         //explosion sound
         SM.explosionFunction();
@@ -697,8 +699,10 @@ public class PlayerScript : MonoBehaviour {
 		}
 		Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
 		rot = Quaternion.Euler(0, 0, rot.eulerAngles.z);
-
-		Instantiate(explosionPrefab,transform.position,rot);
+		if (explosion == SunFlareExplosionPrefab)
+			Instantiate(explosion,transform.position*1.75f,rot);
+		else
+			Instantiate(explosion,transform.position,rot);
 		GameObject shooter = (GameObject)Instantiate(MineShooter);
 		shooter.GetComponent<MineShooterScript>().MyKey = MyKey;
 		shooter.GetComponent<MineShooterScript>().myColor = GetComponent<SpriteRenderer>().color;

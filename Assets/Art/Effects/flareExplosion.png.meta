@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 527bb2df6eee475468e1f57eab30cf20
+timeCreated: 1436031932
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flareExplosion_0
+    21300002: flareExplosion_1
+    21300004: flareExplosion_2
+    21300006: flareExplosion_3
+    21300008: flareExplosion_4
+    21300010: flareExplosion_5
+    21300012: flareExplosion_6
+    21300014: flareExplosion_7
+    21300016: flareExplosion_8
+    21300018: flareExplosion_9
+    21300020: flareExplosion_10
+    21300022: flareExplosion_11
+    21300024: flareExplosion_12
+    21300026: flareExplosion_13
+    21300028: flareExplosion_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: flareExplosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_1
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_2
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_3
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_4
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_5
+      rect:
+        serializedVersion: 2
+        x: 4425
+        y: 1770
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_7
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_8
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_9
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_10
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_11
+      rect:
+        serializedVersion: 2
+        x: 4425
+        y: 885
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_13
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flareExplosion_14
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 0
+        width: 885
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
